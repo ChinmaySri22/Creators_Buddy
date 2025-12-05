@@ -2,6 +2,12 @@
 
 **Generate authentic Hinglish YouTube scripts that capture the unique style of Indian tech creators**
 
+![WhatsApp Image 2025-11-26 at 22 12 41_80642306](https://github.com/user-attachments/assets/ee5d51af-cc89-4b1f-9738-c5fc51da396c)
+![WhatsApp Image 2025-11-26 at 22 15 30_e3a54bc5](https://github.com/user-attachments/assets/ffd60085-ea7e-44e8-ba0b-6190e1c295fb)
+![WhatsApp Image 2025-11-26 at 22 19 18_019198d0](https://github.com/user-attachments/assets/16f8be84-8c73-46a4-b0a9-21ed17ceedb7)
+![WhatsApp Image 2025-11-26 at 22 21 02_5e6511ad](https://github.com/user-attachments/assets/f67d249e-5417-4a6c-b8f2-75548fb8a0a4)
+
+
 A comprehensive AI-powered tool that analyzes existing YouTube transcripts from Indian tech creators and generates new scripts that authentically replicate their speaking patterns, language mix, and content style.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
