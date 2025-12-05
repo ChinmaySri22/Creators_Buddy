@@ -1,0 +1,2514 @@
+{
+  "video_id": "-n2rVJE4vto",
+  "url": "https://www.youtube.com/watch?v=-n2rVJE4vto&t=14s",
+  "metadata": {
+    "title": "Introduction to Stack in Data Structures",
+    "uploader": "CodeWithHarry",
+    "duration": 1195,
+    "view_count": 849974,
+    "upload_date": "20200824",
+    "description": "Stack in data structure is one of the most important Algorithms and data Structures topics. Stack is a linear data type and will have a certain set of methods.\n➡Download Source Code & Notes here: https://archive.codewithharry.com/videos/data-structures-and-algorithms-in-hindi-22\n➡Join this DS & Algo course & Access the playlist: https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi\n►Checkout my English channel here: https://www.youtube.com/ProgrammingWithHarry\n►Click here to s",
+    "genre": "Education",
+    "form": "LONG-FORM",
+    "category": "Academic and Formal Learning"
+  },
+  "transcript": [
+    {
+      "text": "Guys in the video of data structures and algorithms",
+      "start": 0.001,
+      "duration": 2.5130000000000003
+    },
+    {
+      "text": "Today we are going to see stacked data structure.",
+      "start": 2.5140000000000002,
+      "duration": 2.2969999999999997
+    },
+    {
+      "text": "And stacked data structure is very important.",
+      "start": 4.811,
+      "duration": 2.918
+    },
+    {
+      "text": "For some reasons.",
+      "start": 7.729,
+      "duration": 1.46
+    },
+    {
+      "text": "We will talk about, what is stacks?",
+      "start": 9.189,
+      "duration": 2.119999999999999
+    },
+    {
+      "text": "And the notes that I have made for you,",
+      "start": 11.309,
+      "duration": 2.3290000000000006
+    },
+    {
+      "text": "I am going to give you as pdf download.",
+      "start": 13.638,
+      "duration": 2.741999999999999
+    },
+    {
+      "text": "So firstly over here we will start",
+      "start": 16.38,
+      "duration": 2.054000000000002
+    },
+    {
+      "text": "Of our stack discussion",
+      "start": 18.434,
+      "duration": 1.8379999999999974
+    },
+    {
+      "text": "What is stack?",
+      "start": 20.272,
+      "duration": 0.9200000000000017
+    },
+    {
+      "text": "As I have written in notes over here",
+      "start": 21.192,
+      "duration": 2.0
+    },
+    {
+      "text": "Stack is a linear data structure.",
+      "start": 23.192,
+      "duration": 2.0
+    },
+    {
+      "text": "And lets see what type of linear data structure it is.",
+      "start": 25.192,
+      "duration": 3.5790000000000006
+    },
+    {
+      "text": "So guys here I am on my 1 note notebook.",
+      "start": 28.771,
+      "duration": 2.5299999999999976
+    },
+    {
+      "text": "And quickly I will draw for you guys.",
+      "start": 31.301,
+      "duration": 2.525000000000002
+    },
+    {
+      "text": "With the help of straight line something like this",
+      "start": 33.826,
+      "duration": 3.429000000000002
+    },
+    {
+      "text": "Then something like this.",
+      "start": 37.255,
+      "duration": 1.5039999999999978
+    },
+    {
+      "text": "And some container like this",
+      "start": 38.759,
+      "duration": 2.384999999999998
+    },
+    {
+      "text": "Maybe you can say that I have drawn a box.",
+      "start": 41.144,
+      "duration": 3.983000000000004
+    },
+    {
+      "text": "You must be thinking why have I drawn this box.",
+      "start": 45.127,
+      "duration": 3.216000000000001
+    },
+    {
+      "text": "What is my intention behind drawing it?",
+      "start": 48.343,
+      "duration": 3.4919999999999973
+    },
+    {
+      "text": "So today will understand stack.",
+      "start": 51.835,
+      "duration": 2.269999999999996
+    },
+    {
+      "text": "You take that much hint from me.",
+      "start": 54.105,
+      "duration": 1.5850000000000009
+    },
+    {
+      "text": "And over here I will tell you",
+      "start": 55.69,
+      "duration": 2.200000000000003
+    },
+    {
+      "text": "Why I made it?",
+      "start": 57.89,
+      "duration": 1.1809999999999974
+    },
+    {
+      "text": "So look, the stack is similar to a  box ok.",
+      "start": 59.071,
+      "duration": 5.653999999999996
+    },
+    {
+      "text": "If inside this box consider that,",
+      "start": 64.725,
+      "duration": 2.3629999999999995
+    },
+    {
+      "text": "If I add something,",
+      "start": 67.088,
+      "duration": 1.5250000000000057
+    },
+    {
+      "text": "Consider this is an item.",
+      "start": 68.613,
+      "duration": 1.7309999999999945
+    },
+    {
+      "text": "Ok, and I am adding it.",
+      "start": 70.344,
+      "duration": 1.875
+    },
+    {
+      "text": "Where? Suppose I add this in the box.",
+      "start": 72.219,
+      "duration": 3.700000000000003
+    },
+    {
+      "text": "Then it will come inside the box ok.",
+      "start": 75.919,
+      "duration": 1.963000000000008
+    },
+    {
+      "text": "And I will make 2/3 more items like this.",
+      "start": 77.882,
+      "duration": 2.9739999999999895
+    },
+    {
+      "text": "And consider that I have these items",
+      "start": 80.856,
+      "duration": 2.301000000000002
+    },
+    {
+      "text": "These items",
+      "start": 83.157,
+      "duration": 1.5859999999999985
+    },
+    {
+      "text": "I have to add these items in the container.",
+      "start": 84.743,
+      "duration": 3.305000000000007
+    },
+    {
+      "text": "So I can't add it like this.",
+      "start": 88.048,
+      "duration": 1.453000000000003
+    },
+    {
+      "text": "Here in  1 note I can add but in real if I have to add it in container",
+      "start": 89.501,
+      "duration": 4.814999999999998
+    },
+    {
+      "text": "Then I will it like this.",
+      "start": 94.316,
+      "duration": 1.1359999999999957
+    },
+    {
+      "text": "I will add it like this inside it.",
+      "start": 95.452,
+      "duration": 2.0
+    },
+    {
+      "text": "And I added it inside this ok.",
+      "start": 97.452,
+      "duration": 2.0919999999999987
+    },
+    {
+      "text": "Consider the name of this item is item no.1",
+      "start": 100.141,
+      "duration": 3.0799999999999983
+    },
+    {
+      "text": "Ok, so what is the name of this item?",
+      "start": 103.221,
+      "duration": 1.7299999999999898
+    },
+    {
+      "text": "Item no.1",
+      "start": 104.951,
+      "duration": 1.3810000000000002
+    },
+    {
+      "text": "So here I will mark it with red colour.",
+      "start": 106.332,
+      "duration": 3.0770000000000124
+    },
+    {
+      "text": "This is item no.1.",
+      "start": 109.409,
+      "duration": 2.5729999999999933
+    },
+    {
+      "text": "Quickly here I will type item no.1.",
+      "start": 111.982,
+      "duration": 2.6880000000000024
+    },
+    {
+      "text": "This is item no.1.",
+      "start": 114.67,
+      "duration": 1.242999999999995
+    },
+    {
+      "text": "Ok.",
+      "start": 115.913,
+      "duration": 0.5
+    },
+    {
+      "text": "Now, consider if I another item inside it,",
+      "start": 116.413,
+      "duration": 3.7210000000000036
+    },
+    {
+      "text": "You must be thinking what is happening?",
+      "start": 120.134,
+      "duration": 2.709000000000003
+    },
+    {
+      "text": "Firstly I will add items and show you.",
+      "start": 122.843,
+      "duration": 2.165999999999997
+    },
+    {
+      "text": "Just stay with me.",
+      "start": 125.009,
+      "duration": 1.7930000000000064
+    },
+    {
+      "text": "I added this item no.2 ok.",
+      "start": 126.802,
+      "duration": 2.1659999999999826
+    },
+    {
+      "text": "And if I add item no.2 over here",
+      "start": 128.968,
+      "duration": 2.0829999999999984
+    },
+    {
+      "text": "So simply here I will type item no.2.",
+      "start": 131.051,
+      "duration": 4.287000000000006
+    },
+    {
+      "text": "Ok, so item no.2 is here.",
+      "start": 135.338,
+      "duration": 2.1340000000000146
+    },
+    {
+      "text": "And I have marked this as item no.2",
+      "start": 137.472,
+      "duration": 2.3619999999999948
+    },
+    {
+      "text": "Similarly item no.3,item no.4,item no.5",
+      "start": 139.834,
+      "duration": 3.6469999999999914
+    },
+    {
+      "text": "And I can add items.",
+      "start": 143.481,
+      "duration": 1.460000000000008
+    },
+    {
+      "text": "Until when can I add items?",
+      "start": 144.941,
+      "duration": 1.3789999999999907
+    },
+    {
+      "text": "There is one limit of adding items.",
+      "start": 146.32,
+      "duration": 1.568000000000012
+    },
+    {
+      "text": "It is not like I will keep on adding items",
+      "start": 147.888,
+      "duration": 2.1119999999999948
+    },
+    {
+      "text": "And I will add whole world in this container",
+      "start": 150.0,
+      "duration": 2.216000000000008
+    },
+    {
+      "text": "No no it won't happen like this.",
+      "start": 152.216,
+      "duration": 1.445999999999998
+    },
+    {
+      "text": "I can add items to this container until",
+      "start": 153.662,
+      "duration": 4.668999999999983
+    },
+    {
+      "text": "There is space in this container.",
+      "start": 158.331,
+      "duration": 1.4639999999999986
+    },
+    {
+      "text": "So this container",
+      "start": 159.795,
+      "duration": 1.733000000000004
+    },
+    {
+      "text": "Until it has space",
+      "start": 161.528,
+      "duration": 1.4300000000000068
+    },
+    {
+      "text": "It will welcome items.",
+      "start": 162.958,
+      "duration": 2.225999999999999
+    },
+    {
+      "text": "But as the space inside it will finish",
+      "start": 165.184,
+      "duration": 1.953000000000003
+    },
+    {
+      "text": "Consider I added many items to this.",
+      "start": 167.137,
+      "duration": 2.3160000000000025
+    },
+    {
+      "text": "I will make more items.",
+      "start": 169.453,
+      "duration": 1.788000000000011
+    },
+    {
+      "text": "And by adding these items",
+      "start": 171.241,
+      "duration": 2.2139999999999986
+    },
+    {
+      "text": "When next thing will come,",
+      "start": 173.455,
+      "duration": 1.4599999999999795
+    },
+    {
+      "text": "The general compartment in train",
+      "start": 174.915,
+      "duration": 2.0
+    },
+    {
+      "text": "So when everyone tries to get in",
+      "start": 176.915,
+      "duration": 2.521000000000015
+    },
+    {
+      "text": "If you have travelled you must be knowing it.",
+      "start": 179.436,
+      "duration": 1.4180000000000064
+    },
+    {
+      "text": "I often do it.",
+      "start": 180.854,
+      "duration": 1.252999999999986
+    },
+    {
+      "text": "While entering in the general compartment",
+      "start": 182.107,
+      "duration": 3.054000000000002
+    },
+    {
+      "text": "There is no place for a single person,",
+      "start": 185.161,
+      "duration": 2.8640000000000043
+    },
+    {
+      "text": "If you are from India, here I am talking about Indian railway.",
+      "start": 188.025,
+      "duration": 2.6169999999999902
+    },
+    {
+      "text": "And if you get inside it people say the train is full.",
+      "start": 190.642,
+      "duration": 3.7350000000000136
+    },
+    {
+      "text": "Where will you come? People say it while standing near the window.",
+      "start": 194.377,
+      "duration": 2.5819999999999936
+    },
+    {
+      "text": "So when that condition happens over here",
+      "start": 196.959,
+      "duration": 2.3799999999999955
+    },
+    {
+      "text": "Then we say that the stack is full over here.",
+      "start": 199.339,
+      "duration": 3.4809999999999945
+    },
+    {
+      "text": "Now, you can't add elements inside it ok.",
+      "start": 202.82,
+      "duration": 3.781000000000006
+    },
+    {
+      "text": "If you try to enter it",
+      "start": 206.601,
+      "duration": 2.2700000000000102
+    },
+    {
+      "text": "Like how some people hang to the train",
+      "start": 208.871,
+      "duration": 2.0
+    },
+    {
+      "text": "Which is not recommended by the way ok.",
+      "start": 210.871,
+      "duration": 2.2779999999999916
+    },
+    {
+      "text": "It is very dangerous.",
+      "start": 213.149,
+      "duration": 1.7920000000000016
+    },
+    {
+      "text": "It is not at all recommended.",
+      "start": 214.941,
+      "duration": 1.375
+    },
+    {
+      "text": "No one should do it.",
+      "start": 216.316,
+      "duration": 1.3449999999999989
+    },
+    {
+      "text": "And even if someone tries to come forcefully",
+      "start": 217.661,
+      "duration": 3.2139999999999986
+    },
+    {
+      "text": "Then the thing that happens is called stack overflow.",
+      "start": 220.875,
+      "duration": 2.350999999999999
+    },
+    {
+      "text": "So this stack is overflowed.",
+      "start": 223.226,
+      "duration": 1.217000000000013
+    },
+    {
+      "text": "There is no place inside the train.",
+      "start": 224.443,
+      "duration": 2.0
+    },
+    {
+      "text": "Where will you sit?",
+      "start": 226.443,
+      "duration": 1.789999999999992
+    },
+    {
+      "text": "They say like this if you travel in a train.",
+      "start": 228.233,
+      "duration": 3.5720000000000027
+    },
+    {
+      "text": "Voices start coming from behind,",
+      "start": 231.805,
+      "duration": 2.026999999999987
+    },
+    {
+      "text": "Where you coming grandpa? Where are you coming brother?",
+      "start": 233.832,
+      "duration": 2.233000000000004
+    },
+    {
+      "text": "It is full bro.",
+      "start": 236.065,
+      "duration": 1.0010000000000048
+    },
+    {
+      "text": "Such voices start coming from behind.",
+      "start": 237.066,
+      "duration": 1.811000000000007
+    },
+    {
+      "text": "So that is the same condition of stack overflow.",
+      "start": 238.877,
+      "duration": 2.701999999999998
+    },
+    {
+      "text": "Now, you will be like what is happening?",
+      "start": 241.579,
+      "duration": 3.133999999999986
+    },
+    {
+      "text": "What is stack? Why is stack? Why will I do it?",
+      "start": 244.713,
+      "duration": 2.4320000000000164
+    },
+    {
+      "text": "Means what container? You are talking anything.",
+      "start": 247.145,
+      "duration": 2.431999999999988
+    },
+    {
+      "text": "So let me tell you that,",
+      "start": 249.577,
+      "duration": 1.622000000000014
+    },
+    {
+      "text": "Why did I talked about stack over here?",
+      "start": 251.199,
+      "duration": 2.917999999999978
+    },
+    {
+      "text": "Or why we are interested in such data structure?",
+      "start": 254.117,
+      "duration": 2.77200000000002
+    },
+    {
+      "text": "So if we define stack as a datastructure",
+      "start": 256.889,
+      "duration": 3.3840000000000146
+    },
+    {
+      "text": "Then firstly, stack is linear data structure.",
+      "start": 260.273,
+      "duration": 2.4459999999999695
+    },
+    {
+      "text": "And the operations performed inside it,",
+      "start": 262.719,
+      "duration": 3.1469999999999914
+    },
+    {
+      "text": "Are in LIFO manner.",
+      "start": 265.866,
+      "duration": 1.8629999999999995
+    },
+    {
+      "text": "LIFO means Last in first out.",
+      "start": 268.378,
+      "duration": 2.593999999999994
+    },
+    {
+      "text": "Ok, now consider that this container",
+      "start": 270.972,
+      "duration": 3.3220000000000027
+    },
+    {
+      "text": "Inside it you added item no 1.",
+      "start": 274.753,
+      "duration": 1.5950000000000273
+    },
+    {
+      "text": "If I say remove item no.1",
+      "start": 276.348,
+      "duration": 2.0
+    },
+    {
+      "text": "Remove it without removing item no.2",
+      "start": 278.348,
+      "duration": 2.242999999999995
+    },
+    {
+      "text": "Is it possible?",
+      "start": 280.591,
+      "duration": 1.2169999999999845
+    },
+    {
+      "text": "Now, don't say that you will cut the container.",
+      "start": 281.808,
+      "duration": 1.7839999999999918
+    },
+    {
+      "text": "It will be too much.",
+      "start": 283.592,
+      "duration": 0.9739999999999895
+    },
+    {
+      "text": "It is not possible ok.",
+      "start": 284.566,
+      "duration": 1.0820000000000505
+    },
+    {
+      "text": "If you cut the container then many things are possible.",
+      "start": 285.648,
+      "duration": 2.593999999999994
+    },
+    {
+      "text": "Then do anything ok.",
+      "start": 288.242,
+      "duration": 1.4599999999999795
+    },
+    {
+      "text": "Then I can remove it like this also.",
+      "start": 289.702,
+      "duration": 1.3519999999999754
+    },
+    {
+      "text": "In one note.",
+      "start": 291.054,
+      "duration": 1.271000000000015
+    },
+    {
+      "text": "So here I am saying that,",
+      "start": 292.325,
+      "duration": 1.4329999999999927
+    },
+    {
+      "text": "If you want to remove item no.1",
+      "start": 293.758,
+      "duration": 2.5130000000000337
+    },
+    {
+      "text": "You can't remove without touching item no.2,3,4",
+      "start": 296.271,
+      "duration": 4.752999999999986
+    },
+    {
+      "text": "The thing that has gone last will be the first to come out.",
+      "start": 301.024,
+      "duration": 4.644999999999982
+    },
+    {
+      "text": "The thing that has gone last will be the first to come out.",
+      "start": 306.0,
+      "duration": 4.213000000000022
+    },
+    {
+      "text": "The thing that went inside last",
+      "start": 310.213,
+      "duration": 2.48599999999999
+    },
+    {
+      "text": "That will be out first.",
+      "start": 312.888,
+      "duration": 1.7840000000000487
+    },
+    {
+      "text": "Here in this case,",
+      "start": 314.672,
+      "duration": 1.5139999999999532
+    },
+    {
+      "text": "If I mark this both",
+      "start": 316.186,
+      "duration": 2.0540000000000305
+    },
+    {
+      "text": "Like this,",
+      "start": 318.24,
+      "duration": 1.1359999999999673
+    },
+    {
+      "text": "I will mark this both.",
+      "start": 319.376,
+      "duration": 1.6760000000000446
+    },
+    {
+      "text": "And I will do this 3",
+      "start": 321.052,
+      "duration": 2.1889999999999645
+    },
+    {
+      "text": "And I will make this 4.",
+      "start": 323.241,
+      "duration": 2.0
+    },
+    {
+      "text": "Then what will happen over here?",
+      "start": 325.241,
+      "duration": 1.6550000000000296
+    },
+    {
+      "text": "Here the one to come out first",
+      "start": 326.896,
+      "duration": 4.081999999999994
+    },
+    {
+      "text": "If I make plan to remove all items",
+      "start": 330.978,
+      "duration": 2.7180000000000177
+    },
+    {
+      "text": "So the first item that will come out",
+      "start": 333.696,
+      "duration": 3.4069999999999823
+    },
+    {
+      "text": "That will be item no.4.",
+      "start": 337.103,
+      "duration": 1.7609999999999673
+    },
+    {
+      "text": "So for number 4",
+      "start": 339.215,
+      "duration": 1.51400000000001
+    },
+    {
+      "text": "You can call it as break if you find the item name strange.",
+      "start": 340.729,
+      "duration": 1.899000000000001
+    },
+    {
+      "text": "So you can call it break.",
+      "start": 342.628,
+      "duration": 1.4610000000000127
+    },
+    {
+      "text": "So break number 4",
+      "start": 344.089,
+      "duration": 2.2509999999999764
+    },
+    {
+      "text": "It will come out first.",
+      "start": 346.34,
+      "duration": 1.5600000000000023
+    },
+    {
+      "text": "And break number 3 after it break number 2",
+      "start": 347.9,
+      "duration": 2.8670000000000186
+    },
+    {
+      "text": "Which the one that went first will come out last.",
+      "start": 350.767,
+      "duration": 5.740000000000009
+    },
+    {
+      "text": "And here as I told you,",
+      "start": 356.507,
+      "duration": 2.565999999999974
+    },
+    {
+      "text": "The one that went in at last",
+      "start": 359.073,
+      "duration": 2.0
+    },
+    {
+      "text": "It will be out first.",
+      "start": 361.073,
+      "duration": 1.100999999999999
+    },
+    {
+      "text": "And the one that is in first",
+      "start": 362.174,
+      "duration": 1.7970000000000255
+    },
+    {
+      "text": "That will be last out.",
+      "start": 363.971,
+      "duration": 1.3519999999999754
+    },
+    {
+      "text": "So it is also called FILO.",
+      "start": 365.323,
+      "duration": 1.2230000000000132
+    },
+    {
+      "text": "Along with LIFO it is also called as FILO.",
+      "start": 366.546,
+      "duration": 2.0
+    },
+    {
+      "text": "The one that is in first will come out last.",
+      "start": 368.546,
+      "duration": 2.0
+    },
+    {
+      "text": "And the one that is in last it will be out first.",
+      "start": 370.546,
+      "duration": 1.72199999999998
+    },
+    {
+      "text": "Because this container is an empty box.",
+      "start": 372.268,
+      "duration": 2.8180000000000405
+    },
+    {
+      "text": "So such property is there in stack.",
+      "start": 375.086,
+      "duration": 2.259999999999991
+    },
+    {
+      "text": "Ok, so I kept these things.",
+      "start": 377.346,
+      "duration": 1.9529999999999745
+    },
+    {
+      "text": "We will keep it here.",
+      "start": 379.299,
+      "duration": 1.6659999999999968
+    },
+    {
+      "text": "So now you must have understood stack over here.",
+      "start": 380.965,
+      "duration": 1.9770000000000323
+    },
+    {
+      "text": "What is this thing? What happens you must have understood.",
+      "start": 382.942,
+      "duration": 2.3519999999999754
+    },
+    {
+      "text": "Here, I have wrote item number 2 which is entered",
+      "start": 385.294,
+      "duration": 2.1580000000000155
+    },
+    {
+      "text": "The basket last",
+      "start": 387.452,
+      "duration": 1.4870000000000232
+    },
+    {
+      "text": "Will be the first one to come out.",
+      "start": 388.939,
+      "duration": 2.2969999999999686
+    },
+    {
+      "text": "Which means the first element to come out",
+      "start": 391.236,
+      "duration": 2.944999999999993
+    },
+    {
+      "text": "Item number 2",
+      "start": 394.181,
+      "duration": 1.379000000000019
+    },
+    {
+      "text": "If I remove it okay.",
+      "start": 395.56,
+      "duration": 2.0
+    },
+    {
+      "text": "But in this type of data structure",
+      "start": 397.56,
+      "duration": 3.2139999999999986
+    },
+    {
+      "text": "Why will we be interested?",
+      "start": 401.287,
+      "duration": 2.0
+    },
+    {
+      "text": "Why we will be interested in this type of data structure.",
+      "start": 403.287,
+      "duration": 2.350999999999999
+    },
+    {
+      "text": "So we will be interested in data structure because",
+      "start": 405.638,
+      "duration": 2.8640000000000327
+    },
+    {
+      "text": "Because it has some applications",
+      "start": 409.312,
+      "duration": 2.0809999999999604
+    },
+    {
+      "text": "Which makes our other work very easy.",
+      "start": 411.393,
+      "duration": 3.4570000000000505
+    },
+    {
+      "text": "Now what are those applications?",
+      "start": 414.85,
+      "duration": 2.0
+    },
+    {
+      "text": "Firstly we talked about,",
+      "start": 416.85,
+      "duration": 2.116999999999962
+    },
+    {
+      "text": "About function calls ok.",
+      "start": 418.967,
+      "duration": 1.8110000000000355
+    },
+    {
+      "text": "If you guys know,",
+      "start": 420.778,
+      "duration": 1.5419999999999732
+    },
+    {
+      "text": "About function calls",
+      "start": 422.32,
+      "duration": 1.8149999999999977
+    },
+    {
+      "text": "Which I told you in which video,",
+      "start": 424.135,
+      "duration": 2.0919999999999845
+    },
+    {
+      "text": "I told it in first video maybe",
+      "start": 426.227,
+      "duration": 1.9210000000000491
+    },
+    {
+      "text": "1st or 2nd video",
+      "start": 428.148,
+      "duration": 0.7309999999999945
+    },
+    {
+      "text": "I told you in first video in fact.",
+      "start": 428.879,
+      "duration": 1.0550000000000068
+    },
+    {
+      "text": "That your heap",
+      "start": 429.934,
+      "duration": 2.065999999999974
+    },
+    {
+      "text": "Here I drew heap and showed you",
+      "start": 432.0,
+      "duration": 3.2690000000000055
+    },
+    {
+      "text": "I drew stack and showed you.",
+      "start": 435.269,
+      "duration": 1.490000000000009
+    },
+    {
+      "text": "Look, over here I made stack and showed it to you.",
+      "start": 436.759,
+      "duration": 2.2969999999999686
+    },
+    {
+      "text": "And this stack I told you,",
+      "start": 439.272,
+      "duration": 2.3240000000000123
+    },
+    {
+      "text": "The different functions that are there in main",
+      "start": 441.596,
+      "duration": 2.728999999999985
+    },
+    {
+      "text": "There activation record is kept.",
+      "start": 444.325,
+      "duration": 2.0
+    },
+    {
+      "text": "So , if I talk about it again.",
+      "start": 446.325,
+      "duration": 2.6020000000000323
+    },
+    {
+      "text": "Then to design such system stack will be very useful.",
+      "start": 448.927,
+      "duration": 4.385999999999967
+    },
+    {
+      "text": "So here if I say this is my stack,",
+      "start": 453.313,
+      "duration": 2.6920000000000073
+    },
+    {
+      "text": "Ok, I would like to take some other color this time.",
+      "start": 456.005,
+      "duration": 2.4750000000000227
+    },
+    {
+      "text": "And I will take purple ok.",
+      "start": 458.48,
+      "duration": 1.7299999999999613
+    },
+    {
+      "text": "So here if I want to make stack,",
+      "start": 460.21,
+      "duration": 2.0
+    },
+    {
+      "text": "ok, consider here I want to make stack",
+      "start": 462.21,
+      "duration": 2.0600000000000023
+    },
+    {
+      "text": "And over here suppose I build a stack,",
+      "start": 464.27,
+      "duration": 3.7200000000000273
+    },
+    {
+      "text": "And I will keep function calls",
+      "start": 467.99,
+      "duration": 1.6379999999999768
+    },
+    {
+      "text": "Then what will happen?",
+      "start": 469.628,
+      "duration": 1.163000000000011
+    },
+    {
+      "text": "I will erase it with eraser.",
+      "start": 470.791,
+      "duration": 2.6750000000000114
+    },
+    {
+      "text": "And here I will make some space ok.",
+      "start": 473.466,
+      "duration": 3.5109999999999673
+    },
+    {
+      "text": "For stack.",
+      "start": 476.977,
+      "duration": 1.0820000000000505
+    },
+    {
+      "text": "So here inside stack what will I do?",
+      "start": 478.059,
+      "duration": 2.0600000000000023
+    },
+    {
+      "text": "Consider here I have a main function",
+      "start": 480.119,
+      "duration": 1.4259999999999877
+    },
+    {
+      "text": "Consider this is my main function.",
+      "start": 481.545,
+      "duration": 1.6759999999999877
+    },
+    {
+      "text": "So firstly, what will I do?",
+      "start": 483.221,
+      "duration": 1.3249999999999886
+    },
+    {
+      "text": "I will add this inside stack ok.",
+      "start": 484.546,
+      "duration": 2.0
+    },
+    {
+      "text": "I will add it to the stack.",
+      "start": 486.546,
+      "duration": 1.497000000000014
+    },
+    {
+      "text": "Now, the stack of main function",
+      "start": 488.043,
+      "duration": 2.3039999999999736
+    },
+    {
+      "text": "Consider that main called some another function",
+      "start": 490.347,
+      "duration": 2.1350000000000477
+    },
+    {
+      "text": "Then I will make another stack of that function.",
+      "start": 492.482,
+      "duration": 2.8909999999999627
+    },
+    {
+      "text": "Similarly if it calls another function",
+      "start": 495.373,
+      "duration": 3.268000000000029
+    },
+    {
+      "text": "Then what will happen?",
+      "start": 499.073,
+      "duration": 1.02800000000002
+    },
+    {
+      "text": "I will add that also inside this stack.",
+      "start": 500.694,
+      "duration": 2.7829999999999586
+    },
+    {
+      "text": "Ok",
+      "start": 503.477,
+      "duration": 0.5230000000000246
+    },
+    {
+      "text": "And finally as that function will be returned,",
+      "start": 504.0,
+      "duration": 2.0
+    },
+    {
+      "text": "I will remove it from stack.",
+      "start": 506.0,
+      "duration": 1.8570000000000277
+    },
+    {
+      "text": "And similarly as the function will be returning",
+      "start": 507.857,
+      "duration": 2.5979999999999563
+    },
+    {
+      "text": "I will keep on destroying their activation records,",
+      "start": 510.455,
+      "duration": 2.323000000000036
+    },
+    {
+      "text": "And finally when our program will end,",
+      "start": 512.778,
+      "duration": 2.216000000000008
+    },
+    {
+      "text": "All the stacks we have,",
+      "start": 514.994,
+      "duration": 1.9069999999999254
+    },
+    {
+      "text": "In fact our one stack  will be empty.",
+      "start": 516.901,
+      "duration": 2.5400000000000773
+    },
+    {
+      "text": "Stack will be empty.",
+      "start": 519.441,
+      "duration": 1.2980000000000018
+    },
+    {
+      "text": "So stack is very useful in designing such systems.",
+      "start": 520.739,
+      "duration": 3.7269999999999754
+    },
+    {
+      "text": "We will see one more application.",
+      "start": 524.736,
+      "duration": 1.2169999999999845
+    },
+    {
+      "text": "Here I talked about applications.",
+      "start": 525.953,
+      "duration": 1.6760000000000446
+    },
+    {
+      "text": "Our second application of stack is",
+      "start": 527.629,
+      "duration": 1.9460000000000264
+    },
+    {
+      "text": "Infix in postfix conversion.",
+      "start": 529.575,
+      "duration": 1.4869999999999663
+    },
+    {
+      "text": "We will talk about this further.",
+      "start": 531.062,
+      "duration": 1.3519999999999754
+    },
+    {
+      "text": "But here I will now want to talk about, our 3rd application",
+      "start": 532.414,
+      "duration": 3.159999999999968
+    },
+    {
+      "text": "Parenthesis matching.",
+      "start": 535.941,
+      "duration": 1.3519999999999754
+    },
+    {
+      "text": "Ok, so what happens?",
+      "start": 537.293,
+      "duration": 1.2169999999999845
+    },
+    {
+      "text": "Sometimes we need to match parenthesis in an expression.",
+      "start": 538.51,
+      "duration": 3.3759999999999764
+    },
+    {
+      "text": "If one mathematical expression is written,",
+      "start": 541.886,
+      "duration": 3.268000000000029
+    },
+    {
+      "text": "In which parenthesis are used,",
+      "start": 545.774,
+      "duration": 2.0
+    },
+    {
+      "text": "So is that mathematical expression valid or not?",
+      "start": 547.774,
+      "duration": 4.879000000000019
+    },
+    {
+      "text": "Parenthesis in it are matched properly or not?",
+      "start": 552.653,
+      "duration": 2.6749999999999545
+    },
+    {
+      "text": "To find that we use stack.",
+      "start": 555.328,
+      "duration": 2.216000000000008
+    },
+    {
+      "text": "And there are many applications of stack.",
+      "start": 557.544,
+      "duration": 2.3780000000000427
+    },
+    {
+      "text": "Now before learning stack,",
+      "start": 559.922,
+      "duration": 2.377999999999929
+    },
+    {
+      "text": "If we start asking such questions",
+      "start": 562.3,
+      "duration": 1.7000000000000455
+    },
+    {
+      "text": "Why to study stack? What are the benefits?",
+      "start": 564.0,
+      "duration": 1.8690000000000282
+    },
+    {
+      "text": "I can do this. I can do that.",
+      "start": 565.869,
+      "duration": 1.995999999999981
+    },
+    {
+      "text": "Why is stack required?",
+      "start": 567.865,
+      "duration": 1.2169999999999845
+    },
+    {
+      "text": "That is not optimal.",
+      "start": 569.082,
+      "duration": 1.6219999999999573
+    },
+    {
+      "text": "Here I will tell you",
+      "start": 570.704,
+      "duration": 1.5680000000000973
+    },
+    {
+      "text": "Study stack for some time,",
+      "start": 572.272,
+      "duration": 1.2439999999999145
+    },
+    {
+      "text": "And when we will move forward,",
+      "start": 573.516,
+      "duration": 1.6760000000000446
+    },
+    {
+      "text": "You will get answer to this questions on your own.",
+      "start": 575.192,
+      "duration": 2.350999999999999
+    },
+    {
+      "text": "Ok",
+      "start": 577.543,
+      "duration": 0.59699999999998
+    },
+    {
+      "text": "So here we will move forward",
+      "start": 578.464,
+      "duration": 2.5399999999999636
+    },
+    {
+      "text": "And we will define stack.",
+      "start": 581.004,
+      "duration": 2.0
+    },
+    {
+      "text": "As an abstract datatype.",
+      "start": 583.004,
+      "duration": 1.780999999999949
+    },
+    {
+      "text": "Now, if you are afraid by this thing",
+      "start": 585.229,
+      "duration": 1.6219999999999573
+    },
+    {
+      "text": "Then let me tell you,",
+      "start": 586.851,
+      "duration": 0.9740000000000464
+    },
+    {
+      "text": "The stack ADT that I have wrote over here",
+      "start": 587.825,
+      "duration": 2.216000000000008
+    },
+    {
+      "text": "I will use stack as an abstract datatype",
+      "start": 590.041,
+      "duration": 3.0529999999999973
+    },
+    {
+      "text": "Which means with some methods &amp; some data representation",
+      "start": 593.094,
+      "duration": 3.673000000000002
+    },
+    {
+      "text": "I want to represent",
+      "start": 596.767,
+      "duration": 1.794999999999959
+    },
+    {
+      "text": "As an abstract datatype.",
+      "start": 598.562,
+      "duration": 1.4610000000000127
+    },
+    {
+      "text": "To my programmer who will program stack for me",
+      "start": 600.023,
+      "duration": 3.009999999999991
+    },
+    {
+      "text": "I want to tell him,",
+      "start": 603.033,
+      "duration": 1.27800000000002
+    },
+    {
+      "text": "I want all these things.",
+      "start": 604.311,
+      "duration": 1.663000000000011
+    },
+    {
+      "text": "Exactly like I am writing in my ADT.",
+      "start": 605.974,
+      "duration": 3.1099999999999
+    },
+    {
+      "text": "Which means as I am giving you this abstract data type",
+      "start": 609.084,
+      "duration": 3.463000000000079
+    },
+    {
+      "text": "I want this implemented.",
+      "start": 612.547,
+      "duration": 2.481999999999971
+    },
+    {
+      "text": "Then your programmer will ask you,",
+      "start": 615.029,
+      "duration": 1.6459999999999582
+    },
+    {
+      "text": "What do you want?",
+      "start": 616.675,
+      "duration": 1.4190000000000964
+    },
+    {
+      "text": "I will say what I want",
+      "start": 618.094,
+      "duration": 2.064999999999941
+    },
+    {
+      "text": "I want a pointer",
+      "start": 620.612,
+      "duration": 1.7300000000000182
+    },
+    {
+      "text": "On the topmost element",
+      "start": 622.342,
+      "duration": 2.0
+    },
+    {
+      "text": "Look, we can implement stack in anyway.",
+      "start": 625.126,
+      "duration": 2.620999999999981
+    },
+    {
+      "text": "You can do it with array also and with linked list too.",
+      "start": 627.747,
+      "duration": 2.4050000000000864
+    },
+    {
+      "text": "If you wish to take some other approach",
+      "start": 630.152,
+      "duration": 2.5670000000000073
+    },
+    {
+      "text": "You can take it too.",
+      "start": 632.719,
+      "duration": 0.8929999999999154
+    },
+    {
+      "text": "But mainly we use array and linked list.",
+      "start": 633.612,
+      "duration": 2.3490000000000464
+    },
+    {
+      "text": "To make a stack.",
+      "start": 635.961,
+      "duration": 2.3029999999999973
+    },
+    {
+      "text": "But suppose here what happens?",
+      "start": 638.769,
+      "duration": 2.0
+    },
+    {
+      "text": "When I will write stack as an abstract datatype",
+      "start": 640.769,
+      "duration": 2.97199999999998
+    },
+    {
+      "text": "So I will say, look I am making my stack",
+      "start": 643.741,
+      "duration": 2.5009999999999764
+    },
+    {
+      "text": "So I want pointer to the topmost element.",
+      "start": 646.242,
+      "duration": 2.754000000000019
+    },
+    {
+      "text": "Ok, so if I say this is my stack",
+      "start": 648.996,
+      "duration": 3.5710000000000264
+    },
+    {
+      "text": "So my pointer",
+      "start": 653.277,
+      "duration": 2.216000000000008
+    },
+    {
+      "text": "In the topmost element I will say it as top.",
+      "start": 655.493,
+      "duration": 2.2159999999998945
+    },
+    {
+      "text": "Ok, so here I will say I want a pointer",
+      "start": 657.709,
+      "duration": 3.3220000000000027
+    },
+    {
+      "text": "That points to the topmost element",
+      "start": 661.031,
+      "duration": 2.0
+    },
+    {
+      "text": "And I would like to call it top.",
+      "start": 663.031,
+      "duration": 1.9150000000000773
+    },
+    {
+      "text": "And I have its requirement.",
+      "start": 664.946,
+      "duration": 1.5090000000000146
+    },
+    {
+      "text": "This is my top pointer and I have its requirement.",
+      "start": 666.455,
+      "duration": 2.5
+    },
+    {
+      "text": "I want one pointer top.",
+      "start": 668.955,
+      "duration": 1.8789999999999054
+    },
+    {
+      "text": "So that I know of my stack",
+      "start": 670.834,
+      "duration": 2.4420000000000073
+    },
+    {
+      "text": "Which is the topmost element?",
+      "start": 674.073,
+      "duration": 2.0
+    },
+    {
+      "text": "Which is  it pointing?",
+      "start": 676.073,
+      "duration": 0.7050000000000409
+    },
+    {
+      "text": "And all these elements can be our int datatype",
+      "start": 676.778,
+      "duration": 3.42999999999995
+    },
+    {
+      "text": "If you are using c++ than this can  be objects.",
+      "start": 680.208,
+      "duration": 2.5130000000000337
+    },
+    {
+      "text": "But for learning purpose",
+      "start": 682.721,
+      "duration": 1.0979999999999563
+    },
+    {
+      "text": "Here we will use integer datatypes.",
+      "start": 683.819,
+      "duration": 2.5650000000000546
+    },
+    {
+      "text": "I will mark here",
+      "start": 686.384,
+      "duration": 0.9470000000000027
+    },
+    {
+      "text": "Here I will mark some integers of 2,5,9,6",
+      "start": 687.331,
+      "duration": 2.933999999999969
+    },
+    {
+      "text": "As a example I am taking which are integers.",
+      "start": 690.265,
+      "duration": 2.620999999999981
+    },
+    {
+      "text": "In our stack ok.",
+      "start": 692.886,
+      "duration": 1.3520000000000891
+    },
+    {
+      "text": "And stack is like a bucket.",
+      "start": 694.238,
+      "duration": 2.0
+    },
+    {
+      "text": "Stack is like a container.",
+      "start": 696.238,
+      "duration": 1.6759999999999309
+    },
+    {
+      "text": "In which you are adding items.",
+      "start": 697.914,
+      "duration": 2.036000000000058
+    },
+    {
+      "text": "And when you will remove items",
+      "start": 699.95,
+      "duration": 1.774000000000001
+    },
+    {
+      "text": "Then you will remove the last item you added first.",
+      "start": 701.724,
+      "duration": 2.8789999999999054
+    },
+    {
+      "text": "Firstly that will only come out.",
+      "start": 704.603,
+      "duration": 1.8670000000000755
+    },
+    {
+      "text": "9 will come out first in this case ok.",
+      "start": 706.47,
+      "duration": 3.312999999999988
+    },
+    {
+      "text": "So I said to my programmer,",
+      "start": 710.706,
+      "duration": 1.5950000000000273
+    },
+    {
+      "text": "Look, I want a implementation of stack in a code",
+      "start": 712.301,
+      "duration": 4.455999999999904
+    },
+    {
+      "text": "And I want a pointer topmost.",
+      "start": 716.757,
+      "duration": 2.0
+    },
+    {
+      "text": "So that I can define and find out",
+      "start": 718.757,
+      "duration": 2.8230000000000928
+    },
+    {
+      "text": "And whenever I want I can change it",
+      "start": 721.58,
+      "duration": 3.062000000000012
+    },
+    {
+      "text": "My topmost pointer.",
+      "start": 724.642,
+      "duration": 1.52699999999993
+    },
+    {
+      "text": "Pointer to the topmost element so this is top.",
+      "start": 726.169,
+      "duration": 2.175000000000068
+    },
+    {
+      "text": "Ok.",
+      "start": 729.277,
+      "duration": 0.6509999999999536
+    },
+    {
+      "text": "The second thing I will say is,",
+      "start": 730.224,
+      "duration": 1.1359999999999673
+    },
+    {
+      "text": "Look, obviously want to story my data in that",
+      "start": 731.36,
+      "duration": 3.538000000000011
+    },
+    {
+      "text": "In order to create a stack",
+      "start": 734.898,
+      "duration": 2.0
+    },
+    {
+      "text": "We need a pointer to the topmost element along with other elements.",
+      "start": 736.898,
+      "duration": 5.52699999999993
+    },
+    {
+      "text": "Which are stored inside the stack.",
+      "start": 742.425,
+      "duration": 2.782000000000039
+    },
+    {
+      "text": "Which means we want an pointer to topmost element",
+      "start": 745.207,
+      "duration": 3.7810000000000628
+    },
+    {
+      "text": "And we need a place to store those elements.",
+      "start": 748.988,
+      "duration": 4.131999999999948
+    },
+    {
+      "text": "And the elements that are going to be stored",
+      "start": 753.12,
+      "duration": 1.6219999999999573
+    },
+    {
+      "text": "In this case, they are stored in mini stack.",
+      "start": 754.742,
+      "duration": 2.0
+    },
+    {
+      "text": "9,6,5,2",
+      "start": 756.742,
+      "duration": 1.7530000000000427
+    },
+    {
+      "text": "Now, what will happen over here?",
+      "start": 759.402,
+      "duration": 1.1359999999999673
+    },
+    {
+      "text": "This is my data that I have stored over here.",
+      "start": 760.538,
+      "duration": 2.5670000000000073
+    },
+    {
+      "text": "I am happy that I got top pointer.",
+      "start": 763.105,
+      "duration": 2.242999999999938
+    },
+    {
+      "text": "Now I want to perform some operations in stack.",
+      "start": 765.807,
+      "duration": 2.7830000000000155
+    },
+    {
+      "text": "And what will be those operations.",
+      "start": 769.4,
+      "duration": 1.2980000000000018
+    },
+    {
+      "text": "That operations will be add some elements inside this.",
+      "start": 771.319,
+      "duration": 2.68100000000004
+    },
+    {
+      "text": "Consider that this element is not there inside it ok.",
+      "start": 774.54,
+      "duration": 2.3780000000000427
+    },
+    {
+      "text": "So I can add more elements to it.",
+      "start": 777.512,
+      "duration": 2.0
+    },
+    {
+      "text": "I will increase it a little bit as my stack is full.",
+      "start": 779.512,
+      "duration": 2.125
+    },
+    {
+      "text": "We needed to fill the stack because I was giving example.",
+      "start": 781.637,
+      "duration": 2.6310000000000855
+    },
+    {
+      "text": "So the capacity of your stack",
+      "start": 784.268,
+      "duration": 2.0
+    },
+    {
+      "text": "According to that,",
+      "start": 787.043,
+      "duration": 1.0009999999999764
+    },
+    {
+      "text": "This can be full or not.",
+      "start": 788.665,
+      "duration": 2.350999999999999
+    },
+    {
+      "text": "Ok, so what will happen over here?",
+      "start": 791.016,
+      "duration": 1.649000000000001
+    },
+    {
+      "text": "This stack that I have",
+      "start": 792.665,
+      "duration": 1.0819999999999936
+    },
+    {
+      "text": "I have made this and inside it there are some elements",
+      "start": 794.53,
+      "duration": 2.594000000000051
+    },
+    {
+      "text": "I can add more elements to it,",
+      "start": 797.124,
+      "duration": 1.5679999999999836
+    },
+    {
+      "text": "Like if I have to add then I will add like this. ok",
+      "start": 798.692,
+      "duration": 3.7000000000000455
+    },
+    {
+      "text": "And if I have to remove any element out",
+      "start": 802.392,
+      "duration": 2.51299999999992
+    },
+    {
+      "text": "Then in this way I will pop out the element.",
+      "start": 804.905,
+      "duration": 2.2970000000000255
+    },
+    {
+      "text": "I will remove it.",
+      "start": 807.202,
+      "duration": 1.2709999999999582
+    },
+    {
+      "text": "So I can easily remove it out.",
+      "start": 808.473,
+      "duration": 3.1070000000000846
+    },
+    {
+      "text": "But I am not removing. It is called as pop operation.",
+      "start": 811.58,
+      "duration": 2.7539999999999054
+    },
+    {
+      "text": "So the operations that I have defined in stack ADT",
+      "start": 814.685,
+      "duration": 2.9720000000000937
+    },
+    {
+      "text": "Whoever will do implementation of my stack by watching this ADT",
+      "start": 817.657,
+      "duration": 4.437999999999988
+    },
+    {
+      "text": "He is very clear what he wants to do.",
+      "start": 822.095,
+      "duration": 2.425999999999931
+    },
+    {
+      "text": "First operation that I said is push.",
+      "start": 825.303,
+      "duration": 2.269999999999982
+    },
+    {
+      "text": "Which means I want to add a element to the stack",
+      "start": 827.832,
+      "duration": 2.350999999999999
+    },
+    {
+      "text": "Look over here I have made a diagram,",
+      "start": 830.183,
+      "duration": 1.51400000000001
+    },
+    {
+      "text": "Adding this elements in stack we will call it push.",
+      "start": 831.697,
+      "duration": 2.3029999999999973
+    },
+    {
+      "text": "If I want to remove topmost stack element",
+      "start": 834.735,
+      "duration": 3.268000000000029
+    },
+    {
+      "text": "I will say pop operation.",
+      "start": 838.003,
+      "duration": 1.51400000000001
+    },
+    {
+      "text": "Which means from this stack if I remove 9",
+      "start": 839.517,
+      "duration": 2.683999999999969
+    },
+    {
+      "text": "Then I will say I have done pop from the stack.",
+      "start": 842.201,
+      "duration": 2.1340000000000146
+    },
+    {
+      "text": "Which element will be removed? Always the top most will be removed.",
+      "start": 844.335,
+      "duration": 2.63799999999992
+    },
+    {
+      "text": "So I don't need to specify in pop which element to pop.",
+      "start": 846.973,
+      "duration": 3.1210000000000946
+    },
+    {
+      "text": "You can't pop 5.",
+      "start": 850.094,
+      "duration": 1.5389999999999873
+    },
+    {
+      "text": "When you pop then first you need to remove 9 only.",
+      "start": 851.633,
+      "duration": 2.8070000000000164
+    },
+    {
+      "text": "When we say pop from the stack",
+      "start": 854.83,
+      "duration": 2.0
+    },
+    {
+      "text": "At that time we remove top most element out.",
+      "start": 856.83,
+      "duration": 2.048000000000002
+    },
+    {
+      "text": "We say push inside the stack",
+      "start": 859.292,
+      "duration": 2.0
+    },
+    {
+      "text": "Then you add element in that stack.",
+      "start": 861.292,
+      "duration": 1.9739999999999327
+    },
+    {
+      "text": "Which element is added?",
+      "start": 863.266,
+      "duration": 0.9189999999999827
+    },
+    {
+      "text": "We need to tell that we are pushing this element in stack,",
+      "start": 864.185,
+      "duration": 2.6580000000000155
+    },
+    {
+      "text": "Ok, very well.",
+      "start": 866.843,
+      "duration": 1.7220000000000937
+    },
+    {
+      "text": "After this peak. What is peak?",
+      "start": 869.805,
+      "duration": 1.6760000000000446
+    },
+    {
+      "text": "At a given position what is the value?",
+      "start": 871.481,
+      "duration": 3.3759999999999764
+    },
+    {
+      "text": "Ok, so lets say if I say",
+      "start": 874.857,
+      "duration": 2.350999999999999
+    },
+    {
+      "text": "From top 1,2,3",
+      "start": 877.208,
+      "duration": 2.4320000000000164
+    },
+    {
+      "text": "What is the value at 3rd position?",
+      "start": 879.64,
+      "duration": 1.3690000000000282
+    },
+    {
+      "text": "Which is 5 over here.",
+      "start": 881.009,
+      "duration": 0.8400000000000318
+    },
+    {
+      "text": "So I can peak the stack over here.",
+      "start": 881.849,
+      "duration": 2.8909999999999627
+    },
+    {
+      "text": "I can peak and watch",
+      "start": 884.74,
+      "duration": 2.0
+    },
+    {
+      "text": "In index what is the value?",
+      "start": 886.74,
+      "duration": 3.0670000000000073
+    },
+    {
+      "text": "Which I can find is peak operation ok.",
+      "start": 889.807,
+      "duration": 2.463999999999942
+    },
+    {
+      "text": "Ok, so peak operation as per index from top",
+      "start": 892.271,
+      "duration": 3.674000000000092
+    },
+    {
+      "text": "Not from top but from bottom we can find out",
+      "start": 895.945,
+      "duration": 1.98599999999999
+    },
+    {
+      "text": "Which element is on 3rd position?",
+      "start": 897.931,
+      "duration": 5.588999999999942
+    },
+    {
+      "text": "On 5th position, on 6th position.",
+      "start": 903.52,
+      "duration": 2.0
+    },
+    {
+      "text": "Which position you have gave it is on it.",
+      "start": 905.52,
+      "duration": 2.505999999999972
+    },
+    {
+      "text": "And along with that,",
+      "start": 908.026,
+      "duration": 1.782000000000039
+    },
+    {
+      "text": "I have written two functions in one line.",
+      "start": 909.808,
+      "duration": 2.5
+    },
+    {
+      "text": "Isempty and isfull because both of them are very similar.",
+      "start": 912.308,
+      "duration": 2.3460000000000036
+    },
+    {
+      "text": "Isempty means stack is empty.",
+      "start": 914.654,
+      "duration": 2.171000000000049
+    },
+    {
+      "text": "Isfull means is stack full?",
+      "start": 916.825,
+      "duration": 2.4689999999999372
+    },
+    {
+      "text": "If our stack is full",
+      "start": 919.294,
+      "duration": 1.8029999999999973
+    },
+    {
+      "text": "Then it means we can't add more elements to it.",
+      "start": 921.097,
+      "duration": 2.7340000000000373
+    },
+    {
+      "text": "And if our stack is empty",
+      "start": 923.831,
+      "duration": 2.2049999999999272
+    },
+    {
+      "text": "It means we can't remove elements from it.",
+      "start": 926.036,
+      "duration": 2.3880000000000337
+    },
+    {
+      "text": "It has no element inside.",
+      "start": 928.424,
+      "duration": 1.1170000000000755
+    },
+    {
+      "text": "So these two functions determine that",
+      "start": 929.541,
+      "duration": 3.326999999999998
+    },
+    {
+      "text": "That is our stack empty or full ok.",
+      "start": 932.868,
+      "duration": 3.33299999999997
+    },
+    {
+      "text": "So these were some operations",
+      "start": 936.201,
+      "duration": 1.55499999999995
+    },
+    {
+      "text": "I will add notes in the description",
+      "start": 937.756,
+      "duration": 2.33400000000006
+    },
+    {
+      "text": "So don't need to worry about it",
+      "start": 940.09,
+      "duration": 2.2350000000000136
+    },
+    {
+      "text": "You will get the link of notes in the description.",
+      "start": 942.325,
+      "duration": 2.620999999999981
+    },
+    {
+      "text": "Now we will talk about implementation.",
+      "start": 944.946,
+      "duration": 2.0
+    },
+    {
+      "text": "How we can implement stack?",
+      "start": 946.946,
+      "duration": 1.8679999999999382
+    },
+    {
+      "text": "Look at stack definition is",
+      "start": 948.814,
+      "duration": 1.4909999999999854
+    },
+    {
+      "text": "Stack is a collection of elements with certain operations",
+      "start": 950.305,
+      "duration": 2.2970000000000255
+    },
+    {
+      "text": "Flowing LIFO(last in first out) discipline.",
+      "start": 952.602,
+      "duration": 2.9990000000000236
+    },
+    {
+      "text": "Ok",
+      "start": 955.601,
+      "duration": 0.5
+    },
+    {
+      "text": "Stack can be implemented using an array or a linked list.",
+      "start": 956.859,
+      "duration": 2.8170000000000073
+    },
+    {
+      "text": "We will see both, how with help of array it will be implemented",
+      "start": 959.676,
+      "duration": 3.0799999999999272
+    },
+    {
+      "text": "Stack and how with the help of linked list",
+      "start": 962.756,
+      "duration": 2.201999999999998
+    },
+    {
+      "text": "Stack will be implemented ok.",
+      "start": 965.255,
+      "duration": 2.0779999999999745
+    },
+    {
+      "text": "Before we move forward I want to tell you that",
+      "start": 967.569,
+      "duration": 3.8350000000000364
+    },
+    {
+      "text": "I have added all notes over here.",
+      "start": 971.404,
+      "duration": 2.8640000000000327
+    },
+    {
+      "text": "Sometime what happens, when I upload video",
+      "start": 974.268,
+      "duration": 2.9990000000000236
+    },
+    {
+      "text": "And after uploading video, I can't upload notes for some time",
+      "start": 977.267,
+      "duration": 3.8079999999999927
+    },
+    {
+      "text": "You can download them in handwritten form also.",
+      "start": 981.075,
+      "duration": 2.647999999999911
+    },
+    {
+      "text": "You can download in this form also and read it.",
+      "start": 984.0,
+      "duration": 2.1079999999999472
+    },
+    {
+      "text": "And along with that if you want to study online then over here",
+      "start": 986.108,
+      "duration": 4.942000000000007
+    },
+    {
+      "text": "I have also made typed available, you can read that too.",
+      "start": 991.347,
+      "duration": 2.5120000000000573
+    },
+    {
+      "text": "you can relax and read it.",
+      "start": 993.859,
+      "duration": 1.3019999999999072
+    },
+    {
+      "text": "And after reading look it is the same thing",
+      "start": 995.161,
+      "duration": 3.548000000000002
+    },
+    {
+      "text": "You more ..... this",
+      "start": 998.709,
+      "duration": 1.2940000000000964
+    },
+    {
+      "text": "Like I will tell my personal",
+      "start": 1000.003,
+      "duration": 3.034999999999968
+    },
+    {
+      "text": "When I study for first time I like hand written notes.",
+      "start": 1003.038,
+      "duration": 3.48599999999999
+    },
+    {
+      "text": "My eyes like that more.",
+      "start": 1006.524,
+      "duration": 1.7709999999999582
+    },
+    {
+      "text": "Then you can do that, You can download it.",
+      "start": 1008.295,
+      "duration": 2.296000000000049
+    },
+    {
+      "text": "You can take printout.",
+      "start": 1010.591,
+      "duration": 1.1359999999999673
+    },
+    {
+      "text": "However it is comfortable for you.",
+      "start": 1011.727,
+      "duration": 1.3519999999999754
+    },
+    {
+      "text": "Means the intention over here is you learn it.",
+      "start": 1013.646,
+      "duration": 2.0
+    },
+    {
+      "text": "I had made available all links to notes over here.",
+      "start": 1015.646,
+      "duration": 4.879000000000019
+    },
+    {
+      "text": "Along with that as I write code,",
+      "start": 1020.525,
+      "duration": 2.0
+    },
+    {
+      "text": "As I wrote code of circular linked lists",
+      "start": 1022.525,
+      "duration": 3.118000000000052
+    },
+    {
+      "text": "All that code is available here.",
+      "start": 1025.643,
+      "duration": 1.163000000000011
+    },
+    {
+      "text": "And here by copying this",
+      "start": 1026.806,
+      "duration": 3.5109999999999673
+    },
+    {
+      "text": "I can run it by adding to my visual studio code.",
+      "start": 1030.317,
+      "duration": 3.727000000000089
+    },
+    {
+      "text": "So download all notes over here.",
+      "start": 1034.044,
+      "duration": 2.269999999999982
+    },
+    {
+      "text": "I will add stack notes also.",
+      "start": 1036.314,
+      "duration": 1.459999999999809
+    },
+    {
+      "text": "Sometimes I take time to upload notes because",
+      "start": 1037.774,
+      "duration": 2.270000000000209
+    },
+    {
+      "text": "It is not like I can write notes very quickly.",
+      "start": 1040.044,
+      "duration": 4.698999999999842
+    },
+    {
+      "text": "If I wrote this notes",
+      "start": 1044.743,
+      "duration": 1.5140000000001237
+    },
+    {
+      "text": "I am making video and after making video",
+      "start": 1046.257,
+      "duration": 2.9990000000000236
+    },
+    {
+      "text": "I need to work on many things.",
+      "start": 1049.256,
+      "duration": 1.7300000000000182
+    },
+    {
+      "text": "I need to add link to the description.",
+      "start": 1050.986,
+      "duration": 1.6219999999998436
+    },
+    {
+      "text": "And after that I have to upload it on site.",
+      "start": 1052.608,
+      "duration": 4.267000000000053
+    },
+    {
+      "text": "Then it takes too much time",
+      "start": 1056.875,
+      "duration": 1.8920000000000528
+    },
+    {
+      "text": "And then you can see what level notes",
+      "start": 1058.767,
+      "duration": 4.0069999999998345
+    },
+    {
+      "text": "I won't say it with my mouth.",
+      "start": 1062.774,
+      "duration": 1.0290000000002237
+    },
+    {
+      "text": "Now you yourself study and see",
+      "start": 1063.803,
+      "duration": 2.0
+    },
+    {
+      "text": "How much efforts do we need in making such notes.",
+      "start": 1065.803,
+      "duration": 2.435999999999922
+    },
+    {
+      "text": "I myself don't want to say that notes are very good",
+      "start": 1068.239,
+      "duration": 1.9359999999999218
+    },
+    {
+      "text": "But here I want to welcome your view over here.",
+      "start": 1070.175,
+      "duration": 3.645999999999958
+    },
+    {
+      "text": "So tell in comments and tell others also.",
+      "start": 1073.821,
+      "duration": 2.594000000000051
+    },
+    {
+      "text": "What is the level of notes and how are they?",
+      "start": 1076.415,
+      "duration": 1.7300000000000182
+    },
+    {
+      "text": "Those who have read it, tell to others also.",
+      "start": 1078.145,
+      "duration": 1.7129999999999654
+    },
+    {
+      "text": "And if you share the playlist",
+      "start": 1079.858,
+      "duration": 2.91800000000012
+    },
+    {
+      "text": "Then I will feel good.",
+      "start": 1082.776,
+      "duration": 0.9199999999998454
+    },
+    {
+      "text": "Sadly very less people in fact two people,",
+      "start": 1083.696,
+      "duration": 3.673000000000002
+    },
+    {
+      "text": "In last one week they have shared playlist.",
+      "start": 1087.369,
+      "duration": 2.2970000000000255
+    },
+    {
+      "text": "On Instagram I added both the stories.",
+      "start": 1089.666,
+      "duration": 2.216000000000122
+    },
+    {
+      "text": "Ayush did it and someone named Gautam did it.",
+      "start": 1091.882,
+      "duration": 4.0779999999999745
+    },
+    {
+      "text": "So thank you to both of you.",
+      "start": 1095.96,
+      "duration": 1.6489999999998872
+    },
+    {
+      "text": "You guys support and the small population",
+      "start": 1097.609,
+      "duration": 4.807000000000016
+    },
+    {
+      "text": "Who support me you guys come in them.",
+      "start": 1102.659,
+      "duration": 2.106999999999971
+    },
+    {
+      "text": "So thank you from the bottom of my heart.",
+      "start": 1104.766,
+      "duration": 1.08199999999988
+    },
+    {
+      "text": "And if you share it I will get a huge help.",
+      "start": 1105.848,
+      "duration": 3.40300000000002
+    },
+    {
+      "text": "If you will share then it will reach to many students.",
+      "start": 1109.251,
+      "duration": 3.3220000000001164
+    },
+    {
+      "text": "So share it now if you previously haven't done it.",
+      "start": 1112.573,
+      "duration": 2.6749999999999545
+    },
+    {
+      "text": "You have to screenshot and add it your Instagram story.",
+      "start": 1115.248,
+      "duration": 2.0
+    },
+    {
+      "text": "And tag me so that I can repost your story.",
+      "start": 1117.248,
+      "duration": 4.29099999999994
+    },
+    {
+      "text": "Again I will repost your story and add it to my story.",
+      "start": 1121.539,
+      "duration": 4.178000000000111
+    },
+    {
+      "text": "If you haven't followed on Instagram then the link is in the description.",
+      "start": 1125.717,
+      "duration": 2.9179999999998927
+    },
+    {
+      "text": "I will add Instagram link in pinned comment too.",
+      "start": 1128.635,
+      "duration": 2.7519999999999527
+    },
+    {
+      "text": "I hope you are liking this videos.",
+      "start": 1131.387,
+      "duration": 2.1079999999999472
+    },
+    {
+      "text": "I will immediately make the notes available.",
+      "start": 1133.495,
+      "duration": 1.7840000000001055
+    },
+    {
+      "text": "You will get this notes in the description.",
+      "start": 1135.279,
+      "duration": 2.2159999999998945
+    },
+    {
+      "text": "So need to stress about it. Straight away download it.",
+      "start": 1137.495,
+      "duration": 2.270000000000209
+    },
+    {
+      "text": "And study them.",
+      "start": 1139.765,
+      "duration": 1.6219999999998436
+    },
+    {
+      "text": "And now what I said in video it is similar what I have said in notes.",
+      "start": 1141.387,
+      "duration": 3.754000000000133
+    },
+    {
+      "text": "Both the things are same,",
+      "start": 1145.141,
+      "duration": 1.1929999999999836
+    },
+    {
+      "text": "But suppose after 6-8 months you need to do  revision",
+      "start": 1146.334,
+      "duration": 3.2949999999998454
+    },
+    {
+      "text": "Then these notes will be very helpful to you.",
+      "start": 1149.629,
+      "duration": 2.7560000000000855
+    },
+    {
+      "text": "It will be very helpful.",
+      "start": 1152.385,
+      "duration": 1.48700000000008
+    },
+    {
+      "text": "So I wrote it by taking so much time",
+      "start": 1153.872,
+      "duration": 2.0
+    },
+    {
+      "text": "And by changing pen as you can see it over here",
+      "start": 1155.872,
+      "duration": 2.7339999999999236
+    },
+    {
+      "text": "I have used different pens like red pen, blue pen",
+      "start": 1158.606,
+      "duration": 3.16599999999994
+    },
+    {
+      "text": "So if you will share I will like it very much.",
+      "start": 1161.772,
+      "duration": 2.783000000000129
+    },
+    {
+      "text": "So definitely like this video.",
+      "start": 1164.555,
+      "duration": 1.7569999999998345
+    },
+    {
+      "text": "For now only this much for this video.",
+      "start": 1166.447,
+      "duration": 2.0
+    },
+    {
+      "text": "If you haven't accessed playlist then definitely do it.",
+      "start": 1168.447,
+      "duration": 2.7560000000000855
+    },
+    {
+      "text": "Here bookmark it and save it.",
+      "start": 1171.203,
+      "duration": 2.5399999999999636
+    },
+    {
+      "text": "Thank you so much guys for watching this video.",
+      "start": 1173.743,
+      "duration": 2.45900000000006
+    },
+    {
+      "text": "And I will see you next time.",
+      "start": 1176.202,
+      "duration": 2.701999999999998
+    }
+  ],
+  "caption_type": "manual",
+  "language": "en-IN"
+}

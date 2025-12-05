@@ -1,0 +1,1524 @@
+{
+  "video_id": "_6COl6V6mng",
+  "url": "https://www.youtube.com/watch?v=_6COl6V6mng&t=2175s",
+  "metadata": {
+    "title": "Lecture 54: Introduction to Stacks [Theory + Implementation] || C++ Placement Course",
+    "uploader": "CodeHelp - by Babbar",
+    "duration": 2591,
+    "view_count": 659320,
+    "upload_date": "20220206",
+    "description": "In this Video, we are going to learn about Stack Data Structure and its Implementation.\n\nThere is a lot to learn, Keep in mind “ Mnn bhot karega k chor yrr apne se nahi hoga ya maza nahi aara, Just ask 1 question “ Why I started ? “\n\nFor 20% Discount ] Visit Coding Ninjas:  https://bit.ly/3cfdKTe \n\nDiscord Server Link:  https://discord.gg/feSQvVXMrd \n\nCourse Flow: https://whimsical.com/dsa-4-placement-by-love-babbar-C7JX2fJ8hprv9ivEHkArjD@2Ux7TurymNF9zkFahVLk \n\nSlides Link: https://drive.google.",
+    "genre": "Education",
+    "form": "LONG-FORM",
+    "category": "Academic and Formal Learning"
+  },
+  "transcript": [
+    {
+      "text": "Hello ji ,how are you all? this is Love babbar",
+      "start": 3.843,
+      "duration": 1.5380000000000003
+    },
+    {
+      "text": "And welcome to the channel code help , we have reached our lecture no-54",
+      "start": 5.5809999999999995,
+      "duration": 3.639000000000001
+    },
+    {
+      "text": "With one more new topic , we have completed linked list properly in our last 10 videos , and also I have given you H/W",
+      "start": 9.42,
+      "duration": 7.281000000000001
+    },
+    {
+      "text": "We are going to talk about stack , what is stack?",
+      "start": 16.901,
+      "duration": 7.498000000000001
+    },
+    {
+      "text": "Lets understand this , all of you have gone to weddings",
+      "start": 24.4,
+      "duration": 6.333000000000002
+    },
+    {
+      "text": "There are many plates like this",
+      "start": 30.933,
+      "duration": 10.921
+    },
+    {
+      "text": "middle class weddings are like this , there are many plates , after taking plate you move forward",
+      "start": 42.054,
+      "duration": 4.911999999999999
+    },
+    {
+      "text": "There are some vessels from where you take your food",
+      "start": 47.166,
+      "duration": 7.4510000000000005
+    },
+    {
+      "text": "The main point is here , 1st this plate has been placed",
+      "start": 54.817,
+      "duration": 6.558
+    },
+    {
+      "text": "then this , then this , in the following manner but when you take",
+      "start": 61.575,
+      "duration": 6.022999999999996
+    },
+    {
+      "text": "1st you will take this one then this , in the following manner",
+      "start": 67.798,
+      "duration": 5.263999999999996
+    },
+    {
+      "text": "i want to say that here we are talking about a specific order  LIFO-Last in first out",
+      "start": 73.262,
+      "duration": 9.626999999999995
+    },
+    {
+      "text": "Which is inserted in last , will come out 1st",
+      "start": 83.089,
+      "duration": 6.001999999999995
+    },
+    {
+      "text": "In short stack -&gt; data structure , Which is inserted in last , will come out 1st",
+      "start": 89.291,
+      "duration": 9.525999999999996
+    },
+    {
+      "text": "If I have to give you the example , when we use to study about function call stack in recursion",
+      "start": 99.017,
+      "duration": 7.01400000000001
+    },
+    {
+      "text": "This is not new for you",
+      "start": 106.231,
+      "duration": 2.9520000000000124
+    },
+    {
+      "text": "This is your stack",
+      "start": 109.383,
+      "duration": 6.555000000000007
+    },
+    {
+      "text": "You filled something in it",
+      "start": 116.138,
+      "duration": 4.902999999999992
+    },
+    {
+      "text": "here 1st I inserted 1 , then 2 , then 3",
+      "start": 121.241,
+      "duration": 10.773999999999987
+    },
+    {
+      "text": "then 4 , so in this way I inserted in it , we call it push() operation",
+      "start": 132.215,
+      "duration": 9.745000000000005
+    },
+    {
+      "text": "So 1st I pushed 1 , then 2 ,3 ,4",
+      "start": 142.16,
+      "duration": 4.277999999999992
+    },
+    {
+      "text": "in same way if I want to remove , we call it pop(0 operation",
+      "start": 146.638,
+      "duration": 11.180999999999983
+    },
+    {
+      "text": "The one which is inserted at last will come out 1st",
+      "start": 158.019,
+      "duration": 7.935000000000002
+    },
+    {
+      "text": "4 , it is removed",
+      "start": 166.154,
+      "duration": 3.5589999999999975
+    },
+    {
+      "text": "When you popped , 3 comes out , again 2 will be popped out",
+      "start": 169.913,
+      "duration": 7.621999999999986
+    },
+    {
+      "text": "Then 1 , in short how did you inserted ?",
+      "start": 177.735,
+      "duration": 4.875
+    },
+    {
+      "text": "1 ,2 ,3 ,4 and when you pop you do like 4 ,3 ,2 ,1 , that's why I call it LIFO order",
+      "start": 182.81,
+      "duration": 12.913000000000011
+    },
+    {
+      "text": "The one which is inserted at last will come out 1st , we learned about push() operation and also about pop() , we will learn more things , 1st lets give shout out to our sponsor",
+      "start": 195.923,
+      "duration": 14.515999999999991
+    },
+    {
+      "text": "Coding Ninjas is one of the largest coding education platform , where you can take many courses",
+      "start": 210.639,
+      "duration": 5.8589999999999804
+    },
+    {
+      "text": "If you are interested in paid courses , if you want to do development ,machine learning , android ,web development , system design",
+      "start": 216.698,
+      "duration": 5.4129999999999825
+    },
+    {
+      "text": "OS , DBMS .DSA in Java , Python",
+      "start": 222.311,
+      "duration": 5.027999999999992
+    },
+    {
+      "text": "Then you can take those paid courses from here , the best thing about CN is that , here you get one on one doubt solving support",
+      "start": 227.539,
+      "duration": 7.024000000000001
+    },
+    {
+      "text": "If you have any doubt , then it will be resolved in 1-2 hours , courses are very well structured",
+      "start": 234.763,
+      "duration": 5.1200000000000045
+    },
+    {
+      "text": "If you work hard , then you will definitely get the result , educators have already cracked big companies",
+      "start": 240.083,
+      "duration": 5.740000000000009
+    },
+    {
+      "text": "No need to worry . It is available in both Hindi and English",
+      "start": 246.023,
+      "duration": 4.084000000000003
+    },
+    {
+      "text": "While solving question you will get hint videos , if you want to buy any paid course",
+      "start": 250.307,
+      "duration": 4.866000000000014
+    },
+    {
+      "text": "The link is given in description , from there you will get the maximum discount , thankyou",
+      "start": 255.373,
+      "duration": 7.081000000000017
+    },
+    {
+      "text": "If we talk about stack , it is data structure which follows LIFO order",
+      "start": 262.654,
+      "duration": 9.382000000000005
+    },
+    {
+      "text": "Whatever comes last in stack will comes out 1st , as we have taken plate example , these are some plates",
+      "start": 272.236,
+      "duration": 4.893000000000029
+    },
+    {
+      "text": "1st I have placed this plate then this , in following manner , when I will take , 1st I will take this one",
+      "start": 277.329,
+      "duration": 7.293000000000006
+    },
+    {
+      "text": "Then this , in this way",
+      "start": 284.822,
+      "duration": 3.98599999999999
+    },
+    {
+      "text": "If I talk about the operations , I have discussed push() operation , how we insert",
+      "start": 289.008,
+      "duration": 9.307000000000016
+    },
+    {
+      "text": "then I discussed pop() operation , how we remove",
+      "start": 298.515,
+      "duration": 4.578000000000031
+    },
+    {
+      "text": "There is one more operation peek() , lets say my stack state is of this type , there are 3 elements",
+      "start": 303.293,
+      "duration": 9.052000000000021
+    },
+    {
+      "text": "3 ,5 ,9",
+      "start": 312.545,
+      "duration": 3.322999999999979
+    },
+    {
+      "text": "This is the stack and I am looking from top . Then I will see 9 , peek means I will get the top element",
+      "start": 316.068,
+      "duration": 18.602000000000032
+    },
+    {
+      "text": "I have one more function isEmpty() , I can go to this documentation cppreference.com . Here I got the definitions",
+      "start": 334.87,
+      "duration": 11.004000000000019
+    },
+    {
+      "text": "I got the parameters , some functions , how can I access things",
+      "start": 346.074,
+      "duration": 6.591000000000008
+    },
+    {
+      "text": "If I want to push then this is push() , this is pop() , if I have to check empty ,then I can check it from empty function",
+      "start": 352.865,
+      "duration": 8.978999999999985
+    },
+    {
+      "text": "Lets say i created a stack , if I talk about STL",
+      "start": 362.044,
+      "duration": 5.730000000000018
+    },
+    {
+      "text": "How a stack is created , it is very easy",
+      "start": 367.974,
+      "duration": 5.27800000000002
+    },
+    {
+      "text": "Create the stack , then tell me the type , there will be int type data",
+      "start": 373.452,
+      "duration": 6.500999999999976
+    },
+    {
+      "text": "stack&lt;int&gt; s, so in this way I created a stack",
+      "start": 380.153,
+      "duration": 5.776999999999987
+    },
+    {
+      "text": "Now i want to push s.push(2) , in same way I want to do pop ,s.pop()",
+      "start": 386.13,
+      "duration": 13.968999999999994
+    },
+    {
+      "text": "In this way if I want to see top element  ,s.top() , it will return me top element",
+      "start": 400.299,
+      "duration": 7.93100000000004
+    },
+    {
+      "text": "If I want to see if it is empty or not",
+      "start": 408.43,
+      "duration": 7.692999999999984
+    },
+    {
+      "text": "s.empty() , it will return me true or false",
+      "start": 416.323,
+      "duration": 7.75
+    },
+    {
+      "text": "If i want to see size , there is also size function, there are many things available , you can read this",
+      "start": 424.273,
+      "duration": 5.745999999999981
+    },
+    {
+      "text": "But here you understand that we can push() ,pop() , see the top element , or check is it empty or not",
+      "start": 430.219,
+      "duration": 7.295000000000016
+    },
+    {
+      "text": "Lets see this by using STL , things will become clear to you",
+      "start": 437.714,
+      "duration": 5.65500000000003
+    },
+    {
+      "text": "Create a stack of int type , include it 1st",
+      "start": 443.569,
+      "duration": 7.210999999999956
+    },
+    {
+      "text": "Will it work now ? it ran",
+      "start": 450.98,
+      "duration": 5.0779999999999745
+    },
+    {
+      "text": "This is creation of stack",
+      "start": 456.258,
+      "duration": 5.768000000000029
+    },
+    {
+      "text": "Now I want to push something",
+      "start": 462.226,
+      "duration": 6.911999999999978
+    },
+    {
+      "text": "s.push(2) , now I want to pop something , lets say here I pushed 3",
+      "start": 469.338,
+      "duration": 15.468999999999994
+    },
+    {
+      "text": "Then s.pop() , in short lets understand what would have happened here",
+      "start": 485.007,
+      "duration": 6.141999999999996
+    },
+    {
+      "text": "From line no-9 you created a stack",
+      "start": 491.349,
+      "duration": 6.413999999999987
+    },
+    {
+      "text": "Line no- 12 said to insert 2 , then line no-13 to insert 3then line no- 16  to pop the top element",
+      "start": 497.963,
+      "duration": 11.814999999999998
+    },
+    {
+      "text": "3 will be removed , now your stack has become like this , there is only 2",
+      "start": 509.978,
+      "duration": 8.757000000000005
+    },
+    {
+      "text": "Now i want to see the top element",
+      "start": 518.935,
+      "duration": 13.707000000000107
+    },
+    {
+      "text": "If I run it then ans will be 2",
+      "start": 532.643,
+      "duration": 7.454999999999927
+    },
+    {
+      "text": "I ran it, top element is 2",
+      "start": 540.298,
+      "duration": 7.831999999999994
+    },
+    {
+      "text": "Now if I ask is it empty or not? then it will return false , let me print it",
+      "start": 548.33,
+      "duration": 10.083999999999946
+    },
+    {
+      "text": "if (s.empty())  ,cout&lt;&lt; \" Stack is empty\"",
+      "start": 558.614,
+      "duration": 14.088999999999942
+    },
+    {
+      "text": "else , cout&lt;&lt;\" stack is not empty\"",
+      "start": 572.903,
+      "duration": 9.220000000000027
+    },
+    {
+      "text": "Lets run it , 2 is already present",
+      "start": 582.323,
+      "duration": 5.941000000000031
+    },
+    {
+      "text": "So it should give stack is not empty , it gave stack is not empty",
+      "start": 588.464,
+      "duration": 5.366999999999962
+    },
+    {
+      "text": "In short if we talk about STL , now you know to create stack , you know push() ,pop() ,top() , and you have also learned to check empty",
+      "start": 594.031,
+      "duration": 8.870000000000005
+    },
+    {
+      "text": "There are more things , I have shown you , go through this",
+      "start": 603.101,
+      "duration": 10.936000000000035
+    },
+    {
+      "text": "Lets read the definition , same thing , there is nothing additional",
+      "start": 614.237,
+      "duration": 7.658999999999992
+    },
+    {
+      "text": "You will read this page",
+      "start": 622.096,
+      "duration": 5.6299999999999955
+    },
+    {
+      "text": "till now we have understood what is stack? if I have to tell you one more time",
+      "start": 627.926,
+      "duration": 4.324999999999932
+    },
+    {
+      "text": "Stack is a data structure is follows LIFO order",
+      "start": 632.451,
+      "duration": 9.33299999999997
+    },
+    {
+      "text": "In this element are coming like this",
+      "start": 641.984,
+      "duration": 7.199999999999932
+    },
+    {
+      "text": "You pushed 1 then 2 , then 3 and 4",
+      "start": 649.384,
+      "duration": 19.500999999999976
+    },
+    {
+      "text": "Now lets pop , when I popped 1st , 1st 4 will come out , then 3 , then 2, then 1",
+      "start": 669.085,
+      "duration": 14.336999999999989
+    },
+    {
+      "text": "So here last in first out , 4 was inserted at last but comes out 1st",
+      "start": 683.622,
+      "duration": 9.831999999999994
+    },
+    {
+      "text": "In this way we saw in code also , how we create stack and how to handle it",
+      "start": 693.654,
+      "duration": 10.135999999999967
+    },
+    {
+      "text": "cout&lt;&lt; \" size of stack is \" &lt;&lt; s.size ()&lt;&lt; endl",
+      "start": 703.99,
+      "duration": 15.143000000000029
+    },
+    {
+      "text": "Ran it , stack size is 1, because there is only 2 , only one element",
+      "start": 719.333,
+      "duration": 9.61099999999999
+    },
+    {
+      "text": "Comment out this , lets move to our next task",
+      "start": 729.144,
+      "duration": 7.352999999999952
+    },
+    {
+      "text": "Now if someone ask what is stack? it is easy to tell",
+      "start": 736.697,
+      "duration": 4.2169999999999845
+    },
+    {
+      "text": "Or if says to use stack in code , it is also easy",
+      "start": 741.114,
+      "duration": 7.8419999999999845
+    },
+    {
+      "text": "You can code using STL , let say someone says implement stack",
+      "start": 749.156,
+      "duration": 11.275000000000091
+    },
+    {
+      "text": "It is normal , it is asked . you can get stuck in it",
+      "start": 760.631,
+      "duration": 5.480000000000018
+    },
+    {
+      "text": "Basically create a class stack",
+      "start": 766.311,
+      "duration": 6.932000000000016
+    },
+    {
+      "text": "And implement push() ,pop() , peek() , empty() in this",
+      "start": 773.443,
+      "duration": 6.921000000000049
+    },
+    {
+      "text": "I don't want to use STL , I want to create by on class",
+      "start": 780.564,
+      "duration": 7.647000000000048
+    },
+    {
+      "text": "Lets create a class , which will perform all the functions",
+      "start": 788.411,
+      "duration": 8.052000000000021
+    },
+    {
+      "text": "class stack , there will be some data members",
+      "start": 796.663,
+      "duration": 9.575000000000045
+    },
+    {
+      "text": "there will be some functions",
+      "start": 806.438,
+      "duration": 9.768000000000029
+    },
+    {
+      "text": "Did you get this? I want to create it in this way",
+      "start": 816.406,
+      "duration": 6.675000000000068
+    },
+    {
+      "text": "To implement stack I have two ways",
+      "start": 823.281,
+      "duration": 6.877000000000066
+    },
+    {
+      "text": "1. By using array , 2. by using linked list",
+      "start": 830.358,
+      "duration": 7.972000000000094
+    },
+    {
+      "text": "One I will show you and  2nd will be in H/W , until you code by yourself you will not learn it",
+      "start": 838.53,
+      "duration": 12.157000000000039
+    },
+    {
+      "text": "Lets understand stack implementation using array",
+      "start": 850.887,
+      "duration": 5.324000000000069
+    },
+    {
+      "text": "This is an array , there are some spaces , these are the indexing",
+      "start": 856.411,
+      "duration": 12.478000000000065
+    },
+    {
+      "text": "You named it arr , we will do 1st push()",
+      "start": 869.089,
+      "duration": 8.805999999999926
+    },
+    {
+      "text": "I need the index where I want to push or where space is available",
+      "start": 878.095,
+      "duration": 13.009000000000015
+    },
+    {
+      "text": "In short , there is top -&gt;index where I can push",
+      "start": 891.304,
+      "duration": 9.373000000000047
+    },
+    {
+      "text": "In starting it will be -1",
+      "start": 900.877,
+      "duration": 7.430000000000064
+    },
+    {
+      "text": "If we are inserting 1st element , I will put it here , then here , in the following manner",
+      "start": 908.507,
+      "duration": 8.66700000000003
+    },
+    {
+      "text": "When it gets full , the it will be stack over flow , now I can't put more element",
+      "start": 917.374,
+      "duration": 8.900999999999954
+    },
+    {
+      "text": "I need a top by which we will track that is there any space is available or not",
+      "start": 926.475,
+      "duration": 6.567000000000007
+    },
+    {
+      "text": "If there is then I will insert element",
+      "start": 933.242,
+      "duration": 5.804000000000087
+    },
+    {
+      "text": "In properties we need top , and we also need this array",
+      "start": 939.246,
+      "duration": 15.273000000000025
+    },
+    {
+      "text": "int * arr  , we will decide the size in constructor , we have seen it in class lecture",
+      "start": 954.719,
+      "duration": 8.306999999999903
+    },
+    {
+      "text": "Now what will be the size ?  I should have the information that I have reached the size",
+      "start": 963.226,
+      "duration": 10.79200000000003
+    },
+    {
+      "text": "For that I need the size of array",
+      "start": 974.218,
+      "duration": 4.399000000000001
+    },
+    {
+      "text": "In short I need these 3 things if I want to implement stack using array",
+      "start": 978.817,
+      "duration": 5.27800000000002
+    },
+    {
+      "text": "Lets talk about push() operation",
+      "start": 984.295,
+      "duration": 6.446000000000026
+    },
+    {
+      "text": "lets say this is my array , in starting top=-1",
+      "start": 990.941,
+      "duration": 10.482999999999947
+    },
+    {
+      "text": "Then you pushed 22 , 1st it will check is there any space",
+      "start": 1001.624,
+      "duration": 13.278999999999996
+    },
+    {
+      "text": "If there is space then you inserted it",
+      "start": 1015.103,
+      "duration": 7.0049999999999955
+    },
+    {
+      "text": "There can be to things true /false , if space is not available then stack is already filled . Here you can push",
+      "start": 1022.308,
+      "duration": 14.09699999999998
+    },
+    {
+      "text": "If it is available then insert . How? 1st increment the top , now top=0",
+      "start": 1036.605,
+      "duration": 19.48199999999997
+    },
+    {
+      "text": "arr[ top] =22, in this way you inserted it",
+      "start": 1056.287,
+      "duration": 15.75
+    },
+    {
+      "text": "Lets talk about pop()",
+      "start": 1072.237,
+      "duration": 6.343999999999824
+    },
+    {
+      "text": "1st we will check is there any element present ?",
+      "start": 1078.781,
+      "duration": 10.933999999999969
+    },
+    {
+      "text": "There can be two case , T/F",
+      "start": 1089.915,
+      "duration": 3.3530000000000655
+    },
+    {
+      "text": "If it is not present , then you can't perform pop , there will be stack underflow",
+      "start": 1093.468,
+      "duration": 8.138999999999896
+    },
+    {
+      "text": "this is your empty stack and you are trying to pop , then this condition will occur",
+      "start": 1101.807,
+      "duration": 7.705999999999904
+    },
+    {
+      "text": "If true , your top will be here , here is your 22 and top is pointing to it",
+      "start": 1109.713,
+      "duration": 17.79300000000012
+    },
+    {
+      "text": "I will decrement top by 1 , top=-1",
+      "start": 1127.706,
+      "duration": 12.581000000000131
+    },
+    {
+      "text": "How will we check element is present or not ? it is easy",
+      "start": 1140.487,
+      "duration": 4.164999999999964
+    },
+    {
+      "text": "If top&gt;=0 , then there element is present",
+      "start": 1144.852,
+      "duration": 5.543999999999869
+    },
+    {
+      "text": "When top=-1 , in that case your stack is empty",
+      "start": 1150.596,
+      "duration": 10.045000000000073
+    },
+    {
+      "text": "So we saw push() , then pop() , now we want to check whether stack is empty or not",
+      "start": 1160.841,
+      "duration": 10.651000000000067
+    },
+    {
+      "text": "If top=-1 , it means stack is empty",
+      "start": 1171.692,
+      "duration": 11.442999999999984
+    },
+    {
+      "text": "4. top() , it gives me the top element without removing it",
+      "start": 1183.335,
+      "duration": 9.355999999999995
+    },
+    {
+      "text": "This is my array , there is 22 , and top is pointing to it",
+      "start": 1192.891,
+      "duration": 6.1749999999999545
+    },
+    {
+      "text": "If I see it from top , I have to return arr[top]",
+      "start": 1199.266,
+      "duration": 8.783999999999878
+    },
+    {
+      "text": "Here we have to check whether top=-1 or not , if it is -1 then it will not work and it should be less then size also",
+      "start": 1208.25,
+      "duration": 10.769999999999982
+    },
+    {
+      "text": "While coding it we will get it , But here we have taken little clarity if I have to perform these 4 operations",
+      "start": 1219.22,
+      "duration": 6.061999999999898
+    },
+    {
+      "text": "Then I have  to think in which direction",
+      "start": 1225.482,
+      "duration": 3.8659999999999854
+    },
+    {
+      "text": "1st I need the array , then top , then the size",
+      "start": 1229.548,
+      "duration": 10.561999999999898
+    },
+    {
+      "text": "1st of all I created the constructor , i will put size in it",
+      "start": 1240.31,
+      "duration": 9.048000000000002
+    },
+    {
+      "text": "this-&gt;size=size , we have written this here",
+      "start": 1249.558,
+      "duration": 11.213999999999942
+    },
+    {
+      "text": "We have already studied this",
+      "start": 1260.972,
+      "duration": 5.567000000000007
+    },
+    {
+      "text": "Then here created the array , in this way you have done it",
+      "start": 1266.739,
+      "duration": 8.826000000000022
+    },
+    {
+      "text": "Your constructor is initializing this size",
+      "start": 1275.765,
+      "duration": 8.959999999999809
+    },
+    {
+      "text": "And you initialized with -1",
+      "start": 1284.925,
+      "duration": 4.278999999999996
+    },
+    {
+      "text": "Now I have 4 operations , 1. void push( int element ) , then there is void pop()",
+      "start": 1289.404,
+      "duration": 13.32400000000007
+    },
+    {
+      "text": "Then there is int top() , int peek()",
+      "start": 1302.928,
+      "duration": 10.679999999999836
+    },
+    {
+      "text": "Then there is one more function bool isEmpty() , did you get it",
+      "start": 1313.808,
+      "duration": 9.152000000000044
+    },
+    {
+      "text": "Lets talk about push , 1st I have to check whether space is available or not",
+      "start": 1323.16,
+      "duration": 8.740999999999985
+    },
+    {
+      "text": "This is an array , in starting my top is -1 , it will push elements in the following manner",
+      "start": 1332.101,
+      "duration": 18.111999999999853
+    },
+    {
+      "text": "Then how I will know whether space is available or not",
+      "start": 1350.413,
+      "duration": 8.923000000000002
+    },
+    {
+      "text": "I have to find out whether there is any space or not",
+      "start": 1359.536,
+      "duration": 3.967999999999847
+    },
+    {
+      "text": "this is the size , in starting top=-1 , size-top&gt;1, it means I have at least one space",
+      "start": 1363.704,
+      "duration": 19.766000000000076
+    },
+    {
+      "text": "if(size-top&gt;1) , there is space , top++",
+      "start": 1383.471,
+      "duration": 16.278999999999996
+    },
+    {
+      "text": "arr[ top] =element , else , cout&lt;&lt;\" Stack overflow\" &lt;&lt; endl",
+      "start": 1399.95,
+      "duration": 18.482999999999947
+    },
+    {
+      "text": "In pop() I have to check , at least there should be one element",
+      "start": 1418.633,
+      "duration": 7.826999999999998
+    },
+    {
+      "text": "if(top&gt;=0) , in this case you can pop , else , you can't . Here you will decremented top",
+      "start": 1426.66,
+      "duration": 15.547000000000025
+    },
+    {
+      "text": "In esle , cout&lt;&lt;\" Underflow\"",
+      "start": 1442.407,
+      "duration": 11.231999999999971
+    },
+    {
+      "text": "If anyone says that he/she want to see top element , return arr[ top], here we have to put a condition",
+      "start": 1453.839,
+      "duration": 14.738000000000056
+    },
+    {
+      "text": "if( top&gt;=0 &amp;&amp; top&lt;size ) , then you can return",
+      "start": 1468.777,
+      "duration": 11.894000000000005
+    },
+    {
+      "text": "else , cout&lt;&lt;\" Stack is empty\"&lt;&lt;endl",
+      "start": 1480.871,
+      "duration": 14.699999999999818
+    },
+    {
+      "text": "and retrurn -1 , in this case I thing there is no need of this",
+      "start": 1495.771,
+      "duration": 6.782000000000153
+    },
+    {
+      "text": "So in this way you peeked it",
+      "start": 1502.753,
+      "duration": 2.8890000000001237
+    },
+    {
+      "text": "We have to check empty , if( top ==-1 ) it means stack is empty , return True",
+      "start": 1505.842,
+      "duration": 11.092999999999847
+    },
+    {
+      "text": "else , false",
+      "start": 1517.135,
+      "duration": 3.2919999999999163
+    },
+    {
+      "text": "So in this way we completed the stack class",
+      "start": 1520.627,
+      "duration": 6.263000000000147
+    },
+    {
+      "text": "Lets clear it and run it",
+      "start": 1527.09,
+      "duration": 3.2660000000000764
+    },
+    {
+      "text": "Create a stack we named it st (5)",
+      "start": 1530.556,
+      "duration": 9.778999999999996
+    },
+    {
+      "text": "Push 22 in the stack , then 43 ,44",
+      "start": 1540.535,
+      "duration": 20.78800000000001
+    },
+    {
+      "text": "Print the top of the stack , st.top()",
+      "start": 1561.523,
+      "duration": 8.720000000000027
+    },
+    {
+      "text": "Lets run it , is there any mistake?",
+      "start": 1570.443,
+      "duration": 10.128999999999905
+    },
+    {
+      "text": "Oo this method name is peek",
+      "start": 1580.772,
+      "duration": 3.5060000000000855
+    },
+    {
+      "text": "If I show you , in line no-62 you inserted 22",
+      "start": 1584.478,
+      "duration": 7.842999999999847
+    },
+    {
+      "text": "Then 43 , then 44",
+      "start": 1592.521,
+      "duration": 5.288999999999987
+    },
+    {
+      "text": "If now anyone say to do peek , then my answer will be 44 , I printed it",
+      "start": 1598.01,
+      "duration": 8.608999999999924
+    },
+    {
+      "text": "Pop()",
+      "start": 1606.819,
+      "duration": 6.163999999999987
+    },
+    {
+      "text": "Now print it",
+      "start": 1613.183,
+      "duration": 6.567999999999984
+    },
+    {
+      "text": "in short 44 got removed , now there is 22 and 43",
+      "start": 1619.951,
+      "duration": 6.77800000000002
+    },
+    {
+      "text": "If I perform peek then it will print 43",
+      "start": 1626.929,
+      "duration": 7.766999999999825
+    },
+    {
+      "text": "Again I repeated the same thing",
+      "start": 1634.896,
+      "duration": 6.069999999999936
+    },
+    {
+      "text": "I popped 43 , now there is only 22 , now if I see from the top , 22",
+      "start": 1641.166,
+      "duration": 9.301000000000158
+    },
+    {
+      "text": "I repeated the process",
+      "start": 1650.667,
+      "duration": 10.248000000000047
+    },
+    {
+      "text": "in short I popped 22 , now my stack has become empty",
+      "start": 1661.115,
+      "duration": 8.672000000000025
+    },
+    {
+      "text": "Lets run it",
+      "start": 1669.987,
+      "duration": 2.816000000000031
+    },
+    {
+      "text": "Stack is empty and returned -1",
+      "start": 1673.003,
+      "duration": 6.808999999999969
+    },
+    {
+      "text": "if( st.isEmpty() 0 , Stack is empty",
+      "start": 1680.012,
+      "duration": 23.55100000000016
+    },
+    {
+      "text": "Stack is not empty",
+      "start": 1703.763,
+      "duration": 11.340000000000146
+    },
+    {
+      "text": "Lets run it . In short i know here I pushed 3 time , and I have already done 3 pops , so stack is empty",
+      "start": 1715.303,
+      "duration": 8.125
+    },
+    {
+      "text": "But for confirmation lets run it",
+      "start": 1723.628,
+      "duration": 6.157000000000153
+    },
+    {
+      "text": "Stack is empty . Assume it is of size=5 , and I tried to push 6 elements",
+      "start": 1729.985,
+      "duration": 6.9809999999999945
+    },
+    {
+      "text": "Then what will happen in that case , run it",
+      "start": 1737.166,
+      "duration": 4.461000000000013
+    },
+    {
+      "text": "Stack overflow . In short 5 spaces are already filled , when it went to push 70",
+      "start": 1741.827,
+      "duration": 10.034000000000106
+    },
+    {
+      "text": "there is Stack overflow , and we can't put more elements",
+      "start": 1752.061,
+      "duration": 8.062000000000126
+    },
+    {
+      "text": "So in this way we have created a stack class",
+      "start": 1760.323,
+      "duration": 2.1099999999999
+    },
+    {
+      "text": "Now if someone says to implement stack , then it is easy for you , this is logic",
+      "start": 1762.633,
+      "duration": 8.45699999999988
+    },
+    {
+      "text": "If you want to push , check the empty space , then insert it",
+      "start": 1771.29,
+      "duration": 6.488000000000056
+    },
+    {
+      "text": "In pop() , check whether there is any element , then popped",
+      "start": 1777.978,
+      "duration": 5.293999999999869
+    },
+    {
+      "text": "If not , Then you will print stack is empty",
+      "start": 1783.472,
+      "duration": 5.169000000000096
+    },
+    {
+      "text": "peek() ,you want to see the top element , then you returned the top of the array , and it should be in valid range",
+      "start": 1788.841,
+      "duration": 9.220000000000027
+    },
+    {
+      "text": "Stack will be empty. If top=-1 then stack is empty",
+      "start": 1798.261,
+      "duration": 8.54600000000005
+    },
+    {
+      "text": "In short , if i have to tell the complexity of push() , it is O(1)",
+      "start": 1807.007,
+      "duration": 9.05399999999986
+    },
+    {
+      "text": "You are popping in O(1) , for peek() also it is O(1)",
+      "start": 1816.261,
+      "duration": 3.0389999999999873
+    },
+    {
+      "text": "Empty also in O(1)",
+      "start": 1819.5,
+      "duration": 3.663000000000011
+    },
+    {
+      "text": "So you are performing all these in O(1)",
+      "start": 1823.363,
+      "duration": 2.81899999999996
+    },
+    {
+      "text": "In short someone asked you to implement stack , then you will say it is easy",
+      "start": 1826.382,
+      "duration": 9.685999999999922
+    },
+    {
+      "text": "In same way someone says to implement stack in LL , then you have to do it by yourself",
+      "start": 1836.268,
+      "duration": 7.79099999999994
+    },
+    {
+      "text": "We have studied linked list properly , it will be easy for you",
+      "start": 1844.259,
+      "duration": 7.838999999999942
+    },
+    {
+      "text": "To do the practical of the topics that we have learned , so we are going to do question",
+      "start": 1852.3,
+      "duration": 11.69900000000007
+    },
+    {
+      "text": "So that you can apply what you have learned",
+      "start": 1864.0,
+      "duration": 4.397999999999911
+    },
+    {
+      "text": "Implement two stacks in array",
+      "start": 1868.598,
+      "duration": 10.961999999999989
+    },
+    {
+      "text": "You have learned to implement stack in 1 array , now we have solve this one",
+      "start": 1879.76,
+      "duration": 4.801999999999907
+    },
+    {
+      "text": "To implement two stacks in array",
+      "start": 1884.762,
+      "duration": 4.042000000000144
+    },
+    {
+      "text": "So you have these four functions , push1()  push2() ,pop1() , pop2()",
+      "start": 1889.004,
+      "duration": 5.775000000000091
+    },
+    {
+      "text": "You have to complete them",
+      "start": 1894.979,
+      "duration": 7.464999999999918
+    },
+    {
+      "text": "So we will solve this",
+      "start": 1902.644,
+      "duration": 2.7560000000000855
+    },
+    {
+      "text": "Here it is written medium",
+      "start": 1905.6,
+      "duration": 1.678000000000111
+    },
+    {
+      "text": "Lets solve this , how to solve it",
+      "start": 1907.478,
+      "duration": 7.085000000000036
+    },
+    {
+      "text": "Approach will be same , if we have to push , we will check whether there is any space",
+      "start": 1914.763,
+      "duration": 6.028999999999996
+    },
+    {
+      "text": "While popping we will check whether there is any element or not",
+      "start": 1920.992,
+      "duration": 5.134999999999991
+    },
+    {
+      "text": "But how will we do it in array ? we have understand it",
+      "start": 1926.327,
+      "duration": 6.363000000000056
+    },
+    {
+      "text": "Lets think of the variables that we need in class",
+      "start": 1932.89,
+      "duration": 11.228999999999814
+    },
+    {
+      "text": "I need an array , then only I can implement",
+      "start": 1944.319,
+      "duration": 9.619000000000142
+    },
+    {
+      "text": "int* arr, then I need top for both the stacks",
+      "start": 1954.138,
+      "duration": 17.43100000000004
+    },
+    {
+      "text": "int top1 , int top2",
+      "start": 1971.769,
+      "duration": 6.402000000000044
+    },
+    {
+      "text": "then I should know their size",
+      "start": 1978.371,
+      "duration": 5.861999999999853
+    },
+    {
+      "text": "in last approach we have seen , 1. array , 2. top , then the size",
+      "start": 1984.433,
+      "duration": 8.944999999999936
+    },
+    {
+      "text": "here we have discussed it",
+      "start": 1993.578,
+      "duration": 4.688000000000102
+    },
+    {
+      "text": "But I go here and talk about this question , there is need of size ? Lets think , yes",
+      "start": 1998.466,
+      "duration": 8.568000000000211
+    },
+    {
+      "text": "Why? It may be possible you are starting from here , and you are doing it but we don't know when will we stop",
+      "start": 2007.234,
+      "duration": 18.480000000000018
+    },
+    {
+      "text": "So I should know the size of the array , you created these for variables",
+      "start": 2025.914,
+      "duration": 8.030999999999949
+    },
+    {
+      "text": "lets think the logic , how will we solve it",
+      "start": 2034.145,
+      "duration": 3.6030000000000655
+    },
+    {
+      "text": "You have two tops",
+      "start": 2037.948,
+      "duration": 3.8840000000000146
+    },
+    {
+      "text": "but I have single array",
+      "start": 2042.032,
+      "duration": 4.673000000000002
+    },
+    {
+      "text": "So I will approach in such a way , for stack1 I will push from left to right",
+      "start": 2046.905,
+      "duration": 9.82600000000025
+    },
+    {
+      "text": "Its top1=-1 , like this",
+      "start": 2056.931,
+      "duration": 6.326000000000022
+    },
+    {
+      "text": "In short for stack1 my insertion will be from let to right",
+      "start": 2063.457,
+      "duration": 10.376999999999953
+    },
+    {
+      "text": "In stack2 top2 will be here , top2=size , I will insert like this",
+      "start": 2074.034,
+      "duration": 12.027000000000044
+    },
+    {
+      "text": "Insertion will be from right to left",
+      "start": 2086.261,
+      "duration": 7.856999999999971
+    },
+    {
+      "text": "Like this we will pop and insert",
+      "start": 2094.318,
+      "duration": 10.327999999999975
+    },
+    {
+      "text": "So here space is being utilized in an efficient manner",
+      "start": 2104.846,
+      "duration": 5.664000000000215
+    },
+    {
+      "text": "You inserted like this stack1 , there is nothing",
+      "start": 2110.71,
+      "duration": 9.583999999999833
+    },
+    {
+      "text": "Here we insert stack2 , and here stack 1 , so here you have efficiently utilised space",
+      "start": 2120.494,
+      "duration": 9.516999999999825
+    },
+    {
+      "text": "Both are working parallelly",
+      "start": 2130.211,
+      "duration": 4.011000000000422
+    },
+    {
+      "text": "One more approach can be that I give both 'n/2' space",
+      "start": 2134.422,
+      "duration": 8.748000000000047
+    },
+    {
+      "text": "But there is the possibility that this got filled fully , but there is some space left , so didn't used this logic",
+      "start": 2143.37,
+      "duration": 9.965999999999894
+    },
+    {
+      "text": "here we have used space in efficient manner by using these two top variables",
+      "start": 2153.536,
+      "duration": 6.320000000000164
+    },
+    {
+      "text": "in short , if I have to write this constructor , this-&gt;size=s",
+      "start": 2160.056,
+      "duration": 8.719000000000051
+    },
+    {
+      "text": "top1 =-1 , top2=s",
+      "start": 2168.975,
+      "duration": 6.791000000000167
+    },
+    {
+      "text": "Create the array",
+      "start": 2175.966,
+      "duration": 8.929000000000087
+    },
+    {
+      "text": "So I deed these 4 things",
+      "start": 2185.095,
+      "duration": 7.199000000000069
+    },
+    {
+      "text": "Now push1 , my stack1 will be here",
+      "start": 2192.494,
+      "duration": 9.965999999999894
+    },
+    {
+      "text": "Where top1=-1 , and stack2 will be here , top2= s, I will insert like this",
+      "start": 2202.66,
+      "duration": 8.626999999999953
+    },
+    {
+      "text": "Push in the 1st stack ,how?",
+      "start": 2211.487,
+      "duration": 5.753999999999905
+    },
+    {
+      "text": "At least there should be one space",
+      "start": 2217.441,
+      "duration": 6.278000000000247
+    },
+    {
+      "text": "if( top2 -top1 &gt;1)",
+      "start": 2223.919,
+      "duration": 9.079000000000178
+    },
+    {
+      "text": "You will push like this  in stack1 and in this way in stack2",
+      "start": 2233.198,
+      "duration": 11.63000000000011
+    },
+    {
+      "text": "make sure that  top2-top1 &gt; 1",
+      "start": 2245.028,
+      "duration": 6.649000000000342
+    },
+    {
+      "text": "This show that there is at least one space",
+      "start": 2251.877,
+      "duration": 11.43600000000015
+    },
+    {
+      "text": "So push in this space , we incremented top1",
+      "start": 2263.513,
+      "duration": 9.894000000000233
+    },
+    {
+      "text": "arr[top]=num ,else  ,cout&lt;&lt;\" Stack overflow\" &lt;&lt;endl",
+      "start": 2273.607,
+      "duration": 23.32400000000007
+    },
+    {
+      "text": "Is there anything more , no",
+      "start": 2297.131,
+      "duration": 9.401000000000295
+    },
+    {
+      "text": "Now we have to push in stack2 , here also the condition will be same",
+      "start": 2306.732,
+      "duration": 10.15099999999984
+    },
+    {
+      "text": "At least there should be one space , here I will decrement top2",
+      "start": 2317.083,
+      "duration": 13.795000000000073
+    },
+    {
+      "text": "And here you have inserted , and in esle overflow condition",
+      "start": 2331.078,
+      "duration": 5.255999999999858
+    },
+    {
+      "text": "Lets talk about pop() , here we use to check if there is any element then I will pop",
+      "start": 2336.534,
+      "duration": 7.335000000000036
+    },
+    {
+      "text": "So lets talk about pop1() , then I have to check whether there is any element present",
+      "start": 2344.069,
+      "duration": 7.262000000000171
+    },
+    {
+      "text": "if(top1&gt;=0) , then pop",
+      "start": 2351.531,
+      "duration": 4.833999999999833
+    },
+    {
+      "text": "here you printed your answer , then you incremented top1",
+      "start": 2356.565,
+      "duration": 12.541000000000167
+    },
+    {
+      "text": "Assume here you have inserted 3 elements , and you have to pop this then you have to increment top1",
+      "start": 2369.306,
+      "duration": 10.93600000000015
+    },
+    {
+      "text": "else , return -1",
+      "start": 2380.442,
+      "duration": 4.664999999999964
+    },
+    {
+      "text": "if your stack is empty ,then return -1",
+      "start": 2385.307,
+      "duration": 3.6950000000001637
+    },
+    {
+      "text": "Same in this way , we will do pop2(), here your top2&lt;size ,in this case store the answer",
+      "start": 2389.202,
+      "duration": 20.417999999999665
+    },
+    {
+      "text": "Here what will you do? here we will increment top2 , and returned the answer",
+      "start": 2409.82,
+      "duration": 18.290999999999713
+    },
+    {
+      "text": "So we have coded in this way",
+      "start": 2428.311,
+      "duration": 4.074000000000069
+    },
+    {
+      "text": "And i don't think I need anymore statement , so I will remove it",
+      "start": 2432.585,
+      "duration": 8.212999999999738
+    },
+    {
+      "text": "Now if I run it , will it run ?",
+      "start": 2440.998,
+      "duration": 6.539999999999964
+    },
+    {
+      "text": "there is some error , put the ';'",
+      "start": 2447.738,
+      "duration": 5.50400000000036
+    },
+    {
+      "text": "Correct answer , now if I submit it",
+      "start": 2453.442,
+      "duration": 5.83199999999988
+    },
+    {
+      "text": "tell me in comment section will it come or not?",
+      "start": 2459.474,
+      "duration": 6.213999999999942
+    },
+    {
+      "text": "correct answer. So here we have written both the push functions and also the pop",
+      "start": 2465.888,
+      "duration": 5.963999999999942
+    },
+    {
+      "text": "Complexity wise it is working great. logic is also good , because we are using space efficiently",
+      "start": 2472.052,
+      "duration": 15.516999999999825
+    },
+    {
+      "text": "It can be the 1st way , that I would have given 'n/2' space to both",
+      "start": 2487.769,
+      "duration": 15.519000000000233
+    },
+    {
+      "text": "but it is not an efficient way",
+      "start": 2503.488,
+      "duration": 3.86200000000008
+    },
+    {
+      "text": "Space is not optimally utilized in this approach",
+      "start": 2507.55,
+      "duration": 5.03899999999976
+    },
+    {
+      "text": "I will take this array , from here my stack1 will move and from here stack two",
+      "start": 2512.789,
+      "duration": 13.47799999999961
+    },
+    {
+      "text": "Insert whatever mount of element you want to put , you can fill until the entire array is not filled",
+      "start": 2526.467,
+      "duration": 8.474999999999909
+    },
+    {
+      "text": "In short you can implement two stacks in a single array , I have taught you the approach",
+      "start": 2535.142,
+      "duration": 6.512000000000171
+    },
+    {
+      "text": "There is simple logic for push , for pop if there is any element then pop it",
+      "start": 2541.854,
+      "duration": 9.169000000000324
+    },
+    {
+      "text": "Write it once by yourself, if you didn't understand then repeat the video , it will become clear to you",
+      "start": 2551.223,
+      "duration": 5.856000000000222
+    },
+    {
+      "text": "That's it for this video , in next video we are going to do multiple questions of stack",
+      "start": 2557.279,
+      "duration": 4.782999999999902
+    },
+    {
+      "text": "This is medium , this is the introduction to stack , where we learned about stack",
+      "start": 2562.262,
+      "duration": 7.131999999999607
+    },
+    {
+      "text": "We studied STL , then implemented stack by using array , then we saw this function",
+      "start": 2569.594,
+      "duration": 6.423999999999978
+    },
+    {
+      "text": "That's it for this video , will meet in the next one . Show some enthusiasm in the comment section . Like ,subscribe",
+      "start": 2576.218,
+      "duration": 6.914999999999964
+    },
+    {
+      "text": "I am saying after 50 videos about like and subscribe  so do it . That's it for this video , will meet in the next one .Bye Bye!!",
+      "start": 2583.333,
+      "duration": 10.0
+    }
+  ],
+  "caption_type": "manual",
+  "language": "en-IN"
+}
